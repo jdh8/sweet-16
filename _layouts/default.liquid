@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% if page.url == "/" %}
+		<title>{{ site.title }} &ndash; {{ site.description }}</title>
+	{% else %}
+		<title>{{ page.title }} &ndash; {{ site.title }}</title>
+	{% endif %}
+</head>
+<body>
+	<header>
+		<h1><a href="/" rel="home">{{ site.title }}</a></h1>
+		<p>{{ site.description }}</p>
+		<button>Menu</button>
+		<nav>
+			{% capture menu %}{% include menu.md %}{% endcapture %}
+			{{ menu | markdownify }}
+		</nav>
+	</header>
+	<main>{{ content }}</main>
+	<aside>
+		<section>
+			<h2>Categories</h2>
+			<ul>
+				{% for category in site.categories %}
+					<li>{{ category }}</li>
+				{% endfor %}
+			</ul>
+		</section>
+		<section>
+			<h2>Tags</h2>
+			<ul>
+				{% for tag in site.tags %}
+					<li>{{ tag }}</li>
+				{% endfor %}
+			</ul>
+		</section>
+		<section>
+			<h2>Recent posts</h2>
+			<ul>
+				{% for post in site.posts limit: 5 %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</section>
+	</aside>
+</body>
+</html>
