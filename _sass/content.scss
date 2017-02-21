@@ -17,12 +17,10 @@ header {
     padding: 2.625em (100%/13);
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 
     > div {
-        margin: 0.875em auto 0.875em 0;
-        max-width: 100%;
-        min-width: 0;
-        overflow: hidden;
+        margin: 0 auto 0 0;
     }
 
     h1 {
@@ -91,5 +89,30 @@ article {
         a:focus {
             color: #007acc;
         }
+    }
+}
+
+aside {
+    margin-bottom: 3.5em;
+    padding: 0 (100%/13);
+}
+
+footer {
+    padding: 0 (100%/13);
+
+    > small {
+        color: #686868;
+        display: block;
+        font-size: (13rem/16);
+        line-height: (21rem/13);
+
+        a {
+            color: #686868;
+        };
+
+        a:hover,
+        a:focus {
+            color: #007acc;
+        };
     }
 }
