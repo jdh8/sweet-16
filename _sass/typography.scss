@@ -2,9 +2,9 @@ html,
 input,
 select,
 textarea {
-    font-family: $serif;
-    color: #1a1a1a;
-    line-height: 1.75;
+	font-family: $serif;
+	color: #1a1a1a;
+	line-height: 1.75;
 }
 
 h1,
@@ -13,84 +13,84 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+	margin: 0;
 }
 
 p {
-    margin: 0 0 1.75em;
+	margin: 0 0 1.75em;
 }
 
 blockquote {
-    border: 0 solid #1a1a1a;
-    border-left-width: 4px;
-    color: #686868;
-    font-size: (19rem/16);
-    font-style: italic;
-    line-height: (24/19);
-    margin: 0 0 (24em/19);
-    padding: 0 0 0 (28em/19);
+	border: 0 solid #1a1a1a;
+	border-left-width: 4px;
+	color: #686868;
+	font-size: (19rem/16);
+	font-style: italic;
+	line-height: (24/19);
+	margin: 0 0 (24em/19);
+	padding: 0 0 0 (28em/19);
 
-    p {
-        margin-bottom: (24em/19);
-    }
+	p {
+	    margin-bottom: (24em/19);
+	}
 
-    cite,
-    small {
-        color: #1a1a1a;
-        display: block;
-        font-size: 1rem;
-        line-height: 1.75;
+	cite,
+	small {
+	    color: #1a1a1a;
+	    display: block;
+	    font-size: 1rem;
+	    line-height: 1.75;
 
-        &::before {
-            content: "\2014\00a0"; // &mdash;&nbsp;
-        }
-    }
+	    &::before {
+	        content: "\2014\00a0"; // &mdash;&nbsp;
+	    }
+	}
 
-    em,
-    i,
-    cite {
-        font-style: normal;
-    }
+	em,
+	i,
+	cite {
+	    font-style: normal;
+	}
 
-    > :last-child {
-        margin-bottom: 0;
-    }
+	> :last-child {
+	    margin-bottom: 0;
+	}
 }
 
 code,
 kbd,
 samp,
 pre {
-    font-family: Inconsolata, monospace;
+	font-family: Inconsolata, monospace;
 }
 
 pre {
-    border: 1px solid #d1d1d1;
-    font-size: 1rem;
-    line-height: 1.3125;
-    margin: 0 0 1.75em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1.75em;
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+	border: 1px solid #d1d1d1;
+	font-size: 1rem;
+	line-height: 1.3125;
+	margin: 0 0 1.75em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.75em;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
 code {
-    background-color: #d1d1d1;
-    padding: 0.125em 0.25em;
+	background-color: #d1d1d1;
+	padding: 0.125em 0.25em;
 }
 
 abbr {
-    border-bottom: 1px dotted #d1d1d1;
-    cursor: help;
+	border-bottom: 1px dotted #d1d1d1;
+	cursor: help;
 }
 
 mark,
 ins {
-    background: #007acc;
-    color: #fff;
-    padding: 0.125em 0.25em;
-    text-decoration: none;
+	background: #007acc;
+	color: #fff;
+	padding: 0.125em 0.25em;
+	text-decoration: none;
 }

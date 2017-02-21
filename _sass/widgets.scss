@@ -1,23 +1,23 @@
 aside > :last-child,
 aside > section > :last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 aside > section {
-    border-top: 4px solid #1a1a1a;
-    margin-bottom: 3.5em;
-    padding-top: 1.75em;
+	border-top: 4px solid #1a1a1a;
+	margin-bottom: 3.5em;
+	padding-top: 1.75em;
 }
 
 aside > section > :first-child {
-    font-family: $sans;
-    font-size: 1rem;
-    letter-spacing: 0.046875em;
-    line-height: 1.3125;
-    margin: 0 0 1.75em;
-    text-transform: uppercase;
+	font-family: $sans;
+	font-size: 1rem;
+	letter-spacing: 0.046875em;
+	line-height: 1.3125;
+	margin: 0 0 1.75em;
+	text-transform: uppercase;
 }
 
 aside > section > :first-child:empty {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
