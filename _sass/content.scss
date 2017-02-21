@@ -13,7 +13,7 @@ main > :last-child {
     margin-bottom: 0;
 }
 
-body > header {
+header {
     padding: 2.625em (100%/13);
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +26,7 @@ body > header {
     }
 
     h1 {
-        @extend %sans;
+        font-family: $sans;
         font-size: (23rem/16);
         font-weight: 700;
         line-height: (28/23);
@@ -76,8 +76,8 @@ article {
     margin-bottom: 3.5em;
     position: relative;
 
-    > header > h1 {
-        @extend %sans;
+    > :first-child {
+        font-family: $sans;
         font-size: 1.75rem;
         font-weight: 700;
         line-height: 1.25;
