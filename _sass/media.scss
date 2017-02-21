@@ -1,0 +1,12 @@
+embed,
+iframe,
+object,
+video {
+	margin-bottom: 1.75em;
+	max-width: 100%;
+	vertical-align: middle;
+
+	p > & {
+		margin-bottom: 0;
+	}
+}
