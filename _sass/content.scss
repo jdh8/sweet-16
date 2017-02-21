@@ -17,10 +17,10 @@ header {
     padding: 2.625em (100%/13);
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
 
     > div {
-        margin: 0 auto 0 0;
+        margin: 0.875em auto 0.875em 0;
     }
 
     h1 {
@@ -28,6 +28,15 @@ header {
         font-size: (23rem/16);
         font-weight: 700;
         line-height: (28/23);
+
+        a {
+            color: #1a1a1a;
+        }
+
+        a:hover,
+        a:focus {
+            color: #007acc;
+        }
     }
 
     p {
@@ -73,6 +82,8 @@ header {
 article {
     margin-bottom: 3.5em;
     position: relative;
+    margin-left: (100%/13);
+    margin-right: (100%/13);
 
     > :first-child {
         font-family: $sans;

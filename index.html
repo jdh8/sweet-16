@@ -1,6 +1,16 @@
 ---
 layout: default
 ---
+{% for post in site.posts %}
+	<article>
+		<h2><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
+		<div class="content">
+			{{ post.content }}
+		</div>
+		<footer></footer>
+	</article>
+{% endfor %}
+
 {% comment %}
 vim: filetype=liquid
 {% endcomment %}

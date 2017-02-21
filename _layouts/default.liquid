@@ -32,7 +32,7 @@
 			<h2>Categories</h2>
 			<ul>
 				{% for category in site.categories %}
-					<li>{{ category }}</li>
+					<li>{{ category[0] }}</li>
 				{% endfor %}
 			</ul>
 		</section>
@@ -40,7 +40,7 @@
 			<h2>Tags</h2>
 			<ul>
 				{% for tag in site.tags %}
-					<li>{{ tag }}</li>
+					<li>{{ tag[0] }}</li>
 				{% endfor %}
 			</ul>
 		</section>

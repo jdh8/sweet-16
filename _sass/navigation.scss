@@ -1,0 +1,30 @@
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #686868;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+.content {
+    a {
+        box-shadow: 0 1px 0 0 currentColor;
+    }
+
+    a:hover,
+    a:focus {
+        box-shadow: none;
+    }
+}
