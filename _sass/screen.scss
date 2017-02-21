@@ -1,3 +1,119 @@
 @viewport {
 	width: device-width;
 }
+
+@media screen and (min-width: 44.375em) {
+	html::before,
+	html::after {
+		background: #1a1a1a;
+		content: "";
+		display: block;
+		height: 21px;
+		left: 0;
+		position: fixed;
+		width: 100%;
+		z-index: 7;
+	}
+
+	html::before {
+		top: 0;
+	}
+
+	html::after {
+		bottom: 0;
+	}
+
+	html {
+		border: 21px solid #1a1a1a;
+	}
+
+	main {
+		margin-bottom: 5.25em;
+	}
+
+	header {
+		padding: 3.9375em 7.6923%;
+
+		> div {
+			margin-top: 1.3125em;
+			margin-bottom: 1.3125em;
+		}
+
+		h1 {
+			font-size: 1.75rem;
+			line-height: 1.25;
+		}
+
+		p {
+			display: block;
+		}
+	}
+
+	article {
+		margin-bottom: 5.25em;
+		margin-right: (300%/13);
+
+		> :first-child {
+			font-size: 2.0625rem;
+			line-height: (14/11);
+		}
+
+		ul,
+		ol {
+			margin-left: 0;
+		}
+
+		li > ul {
+			margin-left: 1.25em;
+		}
+
+		li > ol {
+			margin-left: 1.5em;
+		}
+	}
+
+	blockquote {
+		margin-left: (-28em/19);
+	}
+
+	aside {
+		padding-right: (300%/13);
+	}
+}
+
+@media screen and (min-width: 56.875em) {
+	body {
+		padding: 0 (100%/22);
+	}
+
+	header {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	main {
+		float: left;
+		margin-right: -100%;
+		width: 70%;
+	}
+
+	article {
+		margin: 0;
+	}
+
+	aside {
+		float: left;
+		margin-left: 75%;
+		padding: 0;
+		width: 25%;
+
+		> section {
+			font-size: 0.8125rem;
+			line-height: (21/13);
+		}
+	}
+
+	footer {
+		padding: 0 0 3.5em;
+	}
+}
