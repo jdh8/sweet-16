@@ -9,11 +9,17 @@
 	{% else %}
 		<title>{{ page.title }} &ndash; {{ site.title }}</title>
 	{% endif %}
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:,i,b,bi,900,900i%7CMontserrat:,i,b,bi,900,900i">
+	<link rel="stylesheet" href="/style/main.css">
 </head>
 <body>
 	<header>
-		<h1><a href="/" rel="home">{{ site.title }}</a></h1>
-		<p>{{ site.description }}</p>
+		<div>
+			<h1><a href="/" rel="home">{{ site.title }}</a></h1>
+			<p>{{ site.description }}</p>
+		</div>
 		<button>Menu</button>
 		<nav>
 			{% capture menu %}{% include menu.md %}{% endcapture %}

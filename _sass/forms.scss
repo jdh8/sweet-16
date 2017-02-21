@@ -1,0 +1,50 @@
+input {
+    line-height: normal;
+}
+
+button,
+button[disabled]:hover,
+button[disabled]:focus {
+    @extend %sans;
+    background: #1a1a1a;
+    border: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
+}
+
+button:hover,
+button:focus {
+    background: #007acc;
+}
+
+button:focus {
+    outline: thin dotted;
+    outline-offset: -4px;
+}
+
+input,
+textarea {
+    background: #f7f7f7;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    color: #686868;
+    padding: 0.625em 0.4375em;
+    width: 100%;
+
+    &:focus {
+        background-color: #fff;
+        border-color: #007acc;
+        color: #1a1a1a;
+        outline: 0;
+    }
+}
+
+input[type="search"] {
+    border-radius: 2px 0 0 2px;
+    width: calc(100% - 42px);
+}

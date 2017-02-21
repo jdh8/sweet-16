@@ -1,0 +1,99 @@
+@import "fonts";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+hr {
+    background-color: #d1d1d1;
+    border: 0;
+    height: 1px;
+    margin: 0 0 1.75em;
+}
+
+ul,
+ol {
+    margin: 0 0 1.75em 1.25em;
+    padding: 0;
+}
+
+ol {
+    margin-left: 1.5em;
+}
+
+li > {
+    ul,
+    ol {
+        margin-bottom: 0;
+    }
+}
+
+dl,
+dd {
+    margin: 0 0 1.75em;
+}
+
+dt {
+    font-weight: 700;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+del {
+    opacity: 0.8;
+}
+
+table,
+th,
+td {
+    border: 1px solid #d1d1d1;
+}
+
+table {
+    border: {
+        collapse: separate;
+        spacing: 0;
+        width: 1px 0 0 1px;
+    }
+
+    margin: 0 0 1.75em;
+    table-layout: fixed;
+    width: 100%;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: start;
+}
+
+th {
+    border-width: 0 1px 1px 0;
+    font-weight: 700;
+}
+
+td {
+    border-width: 0 1px 1px 0;
+};
+
+th,
+td {
+    padding: 0.4375em;
+}
+
+::placeholder {
+    @extend %sans;
+    color: #686868;
+    opacity: 1;
+}
