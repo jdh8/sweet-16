@@ -26,55 +26,59 @@ main {
 	margin-bottom: 5.25em;
 }
 
-header {
-	padding: 3.9375em (100%/13);
-
-	> :first-child {
-		margin-top: 1.3125em;
-		margin-bottom: 1.3125em;
-	}
-
-	h1 {
-		font-size: 1.75rem;
-		line-height: 1.25;
-	}
-
-	p {
-		display: block;
-	}
-
-	> label {
-		font-size: 1rem;
-		margin: 1.3125em 0;
-		padding: 0.8125em 0.875em 0.6875em;
-	}
-}
-
 article {
 	margin-bottom: 5.25em;
 	margin-right: (300%/13);
+}
 
-	> :first-child {
-		font-size: 2.0625rem;
-		line-height: (14/11);
-	}
+article > :first-child {
+	font-size: 2.0625rem;
+	line-height: (14/11);
+}
 
-	ul,
-	ol {
-		margin-left: 0;
-	}
+article ul,
+article ol {
+	margin-left: 0;
+}
 
-	li > ul {
-		margin-left: 1.25em;
-	}
+article li > ul {
+	margin-left: 1.25em;
+}
 
-	li > ol {
-		margin-left: 1.5em;
-	}
+article li > ol {
+	margin-left: 1.5em;
 }
 
 blockquote {
 	margin-left: (-28em/19);
+}
+
+header {
+	padding: 3.9375em (100%/13);
+}
+
+header > :first-child {
+	margin-top: 1.3125em;
+	margin-bottom: 1.3125em;
+}
+
+header h1 {
+	font-size: 1.75rem;
+	line-height: 1.25;
+}
+
+header p {
+	display: block;
+}
+
+header > label {
+	font-size: 1rem;
+	margin: 1.3125em 0;
+	padding: 0.8125em 0.875em 0.6875em;
+}
+
+header > nav {
+	margin: 1.3125em 0;
 }
 
 aside {

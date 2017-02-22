@@ -18,45 +18,43 @@ a:active {
 	outline: 0;
 }
 
-.content {
-	a {
-		box-shadow: 0 1px 0 0 currentColor;
-	}
+.content a {
+	box-shadow: 0 1px 0 0 currentColor;
+}
 
-	a:hover,
-	a:focus {
-		box-shadow: none;
-	}
+.content a:hover,
+.content a:focus {
+	box-shadow: none;
 }
 
 nav {
 	font-family: $sans;
+}
 
-	ul {
-		list-style: none;
-		margin: 0;
+nav ul {
+	list-style: none;
+	margin: 0;
+}
 
-		ul {
-			margin-left: 0.875em;
-		}
-	}
+nav ul ul {
+	margin-left: 0.875em;
+}
 
-	li {
-		border-top: 1px solid #d1d1d1;
-		position: relative;
-	}
+nav li {
+	border-top: 1px solid #d1d1d1;
+	position: relative;
+}
 
-	a {
-		color: #1a1a1a;
-		display: block;
-		line-height: 1.3125;
-		padding: 0.84375em 0;
-	}
+nav a {
+	color: #1a1a1a;
+	display: block;
+	line-height: 1.3125;
+	padding: 0.84375em 0;
+}
 
-	a:hover,
-	a:focus {
-		color: #007acc;
-	}
+nav a:hover,
+nav a:focus {
+	color: #007acc;
 }
 
 header > nav {

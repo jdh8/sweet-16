@@ -29,32 +29,32 @@ blockquote {
 	line-height: (24/19);
 	margin: 0 0 (24em/19);
 	padding: 0 0 0 (28em/19);
+}
 
-	p {
-		margin-bottom: (24em/19);
+blockquote p {
+	margin-bottom: (24em/19);
+}
+
+blockquote cite,
+blockquote small {
+	color: #1a1a1a;
+	display: block;
+	font-size: 1rem;
+	line-height: 1.75;
+
+	&::before {
+		content: "\2014\00a0"; // &mdash;&nbsp;
 	}
+}
 
-	cite,
-	small {
-		color: #1a1a1a;
-		display: block;
-		font-size: 1rem;
-		line-height: 1.75;
+blockquote em,
+blockquote i,
+blockquote cite {
+	font-style: normal;
+}
 
-		&::before {
-			content: "\2014\00a0"; // &mdash;&nbsp;
-		}
-	}
-
-	em,
-	i,
-	cite {
-		font-style: normal;
-	}
-
-	> :last-child {
-		margin-bottom: 0;
-	}
+blockquote > :last-child {
+	margin-bottom: 0;
 }
 
 code,

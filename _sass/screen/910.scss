@@ -2,117 +2,6 @@ body {
 	padding: 0 (100%/22);
 }
 
-header {
-	padding-left: 0;
-	padding-right: 0;
-
-	> label {
-		display: none;
-	}
-
-	> nav {
-		display: block;
-		flex-basis: auto;
-	}
-}
-
-nav {
-	margin: 0 -0.875em;
-
-	> ul > li {
-		border: 0;
-		float: left;
-
-		> ul::before,
-		> ul::after {
-			content: "";
-			border-style: solid;
-			position: absolute;
-		}
-
-		> ul::before {
-			border-color: #d1d1d1 transparent;
-			border-width: 0 10px 10px;
-			right: 9px;
-			top: -9px;
-		}
-
-		> ul::after {
-			border-color: #fff transparent;
-			border-width: 0 8px 8px;
-			right: 11px;
-			top: -7px;
-		}
-	}
-
-	li:hover {
-		> a {
-			color: #007acc;
-		}
-
-		> ul {
-			display: block;
-			left: auto;
-			right: 0;
-		}
-	}
-
-	a {
-		outline-offset: -8px;
-		padding: 0.65625em 0.875em;
-		white-space: nowrap;
-	}
-
-	a:not(:only-child) {
-		margin: 0;
-		padding-right: 2.25em;
-	}
-
-	a:not(:only-child)::after {
-		content: "\f431";
-		position: absolute;
-		right: 0.625em;
-		top: 0.8125em;
-	}
-
-	ul ul {
-		display: none;
-		border-bottom: 1px solid #d1d1d1;
-		margin: 0;
-		position: absolute;
-		z-index: 9;
-
-		ul {
-			top: -1px;
-		}
-
-		li {
-			background-color: #fff;
-			border: 1px solid #d1d1d1;
-			border-bottom-width: 0;
-		}
-
-		li:hover > ul {
-			right: 100%;
-		}
-
-		a {
-			white-space: normal;
-			width: 12.6875em;
-		}
-
-		a:not(:only-child) {
-			padding-right: 2.0625em;
-		}
-
-		a:not(:only-child)::after {
-			right: 0.5625em;
-			top: 0.875em;
-			transform: rotate(90deg);
-		}
-	}
-}
-
 main {
 	float: left;
 	margin-right: -100%;
@@ -123,24 +12,131 @@ article {
 	margin: 0;
 }
 
+header {
+	padding-left: 0;
+	padding-right: 0;
+	align-items: flex-start;
+}
+
+header > label {
+	display: none;
+}
+
+header > nav {
+	display: block;
+	margin-right: -0.875em;
+	flex-basis: auto;
+}
+
+nav li:hover > a {
+	color: #007acc;
+}
+
+nav li:hover > ul {
+	display: block;
+	left: auto;
+	right: 0;
+}
+
+nav a {
+	outline-offset: -8px;
+	padding: 0.65625em 0.875em;
+	white-space: nowrap;
+}
+
+nav a:not(:only-child) {
+	margin: 0;
+	padding-right: 2.25em;
+}
+
+nav a:not(:only-child)::after {
+	content: "\f431";
+	position: absolute;
+	right: 0.625em;
+	top: 0.8125em;
+}
+
+nav > ul > li {
+	border: 0;
+	float: left;
+}
+
+nav > ul > li > ul::before,
+nav > ul > li > ul::after {
+	content: "";
+	border-style: solid;
+	position: absolute;
+}
+
+nav > ul > li > ul::before {
+	border-color: #d1d1d1 transparent;
+	border-width: 0 10px 10px;
+	right: 9px;
+	top: -9px;
+}
+
+nav > ul > li > ul::after {
+	border-color: #fff transparent;
+	border-width: 0 8px 8px;
+	right: 11px;
+	top: -7px;
+}
+
+nav ul ul {
+	display: none;
+	border-bottom: 1px solid #d1d1d1;
+	margin: 0;
+	position: absolute;
+	z-index: 9;
+}
+
+nav ul ul ul {
+	top: -1px;
+}
+
+nav ul ul li {
+	background-color: #fff;
+	border: 1px solid #d1d1d1;
+	border-bottom-width: 0;
+}
+
+nav ul ul li:hover > ul {
+	right: 100%;
+}
+
+nav ul ul a {
+	white-space: normal;
+	width: 12.6875em;
+}
+
+nav ul ul a:not(:only-child) {
+	padding-right: 2.0625em;
+}
+
+nav ul ul a:not(:only-child)::after {
+	right: 0.5625em;
+	top: 0.875em;
+	transform: rotate(90deg);
+}
+
 aside {
 	float: left;
 	margin-left: 75%;
 	padding: 0;
 	width: 25%;
+}
 
-	> section {
-		font-size: 0.8125rem;
-		line-height: (21/13);
-	}
+aside > section {
+	font-size: 0.8125rem;
+	line-height: (21/13);
 }
 
 footer {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0 0 3.5em;
+}
 
-	> nav {
-		display: none;
-	}
+footer > nav {
+	display: none;
 }
