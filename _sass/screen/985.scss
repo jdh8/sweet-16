@@ -3,6 +3,51 @@ article {
 	margin-bottom: 7em;
 }
 
+article > :first-child {
+	font-size: 2.5rem;
+	line-height: 1.225;
+	margin-bottom: 1.05em;
+}
+
+.post.content {
+	float: right;
+	width: (500%/7);
+}
+
+.content h1 {
+	font-size: 2.0625rem;
+	line-height: (14/11);
+	margin-top: (56em/33);
+	margin-bottom: (28em/33);
+}
+
+.content h2 {
+	font-size: 1.75rem;
+	line-height: 1.25;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-size: 1.4375rem;
+	line-height: (28/23);
+	margin-top: (56em/23);
+	margin-bottom: (28em/23);
+}
+
+h4,
+h5,
+h6 {
+	font-size: 1.1875rem;
+	line-height: (21/19);
+	margin-top: (56em/19);
+	margin-bottom: (28em/19);
+}
+
+h4 {
+	letter-spacing: (2.5em/19);
+}
+
 header {
 	padding: 5.25em 0;
 }
@@ -11,15 +56,4 @@ header > nav,
 header > :first-child {
 	margin-top: 1.75em;
 	margin-bottom: 1.75em;
-}
-
-.post.content {
-	float: right;
-	width: (500%/7);
-}
-
-article > :first-child {
-	font-size: 2.5rem;
-	line-height: 1.225;
-	margin-bottom: 1.05em;
 }

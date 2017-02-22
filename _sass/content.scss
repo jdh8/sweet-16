@@ -37,6 +37,58 @@ article > :first-child > a:focus {
 	color: #007acc;
 }
 
+.content h1 {
+	font-size: 1.75rem;
+	line-height: 1.25;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.content h2 {
+	font-size: 1.4375rem;
+	line-height: (28/23);
+	margin-top: (56em/23);
+	margin-bottom: (28em/23);
+}
+
+h3 {
+	font-size: 1.1875rem;
+	line-height: (21/19);
+	margin-top: (56em/19);
+	margin-bottom: (28em/19);
+}
+
+h4,
+h5,
+h6 {
+	font-size: 1rem;
+	line-height: 1.3125;
+	margin-top: 3.5em;
+	margin-bottom: 1.75em;
+}
+
+h4 {
+	letter-spacing: 0.140625em;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-style: italic;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+	font-weight: 900;
+}
+
+.content > :first-child {
+	margin-top: 0;
+}
+
 header {
 	padding: 2.625em (100%/13);
 	display: flex;
@@ -117,7 +169,7 @@ footer > small {
 	color: #686868;
 	display: block;
 	font-size: (13rem/16);
-	line-height: (21rem/13);
+	line-height: (21/13);
 }
 
 footer > small a {
