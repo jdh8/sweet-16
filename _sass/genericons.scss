@@ -1,0 +1,19 @@
+@font-face {
+	font-family: Genericons;
+	src: url(https://cdnjs.cloudflare.com/ajax/libs/genericons/3.1/Genericons.woff);
+}
+
+nav a:not(:only-child)::after {
+	display: inline-block;
+	font-family: Genericons;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	text-align: center;
+	text-decoration: inherit;
+	text-transform: none;
+	vertical-align: top;
+}

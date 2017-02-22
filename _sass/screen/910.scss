@@ -22,47 +22,22 @@ nav {
 	> ul > li {
 		border: 0;
 		float: left;
-	}
 
-	a {
-		outline-offset: -8px;
-		padding: 0.65625em 0.875em;
-		white-space: nowrap;
-	}
-
-	ul ul {
-		display: none;
-		border-bottom: 1px solid #d1d1d1;
-		margin: 0;
-		position: absolute;
-		z-index: 9;
-
-		li {
-			background-color: #fff;
-			border: 1px solid #d1d1d1;
-			border-bottom-width: 0;
-		}
-
-		a {
-			white-space: normal;
-			width: 12.6875em;
-		}
-
-		&::before,
-		&::after {
+		> ul::before,
+		> ul::after {
 			content: "";
 			border-style: solid;
 			position: absolute;
 		}
 
-		&::before {
+		> ul::before {
 			border-color: #d1d1d1 transparent;
 			border-width: 0 10px 10px;
 			right: 9px;
 			top: -9px;
 		}
 
-		&::after {
+		> ul::after {
 			border-color: #fff transparent;
 			border-width: 0 8px 8px;
 			right: 11px;
@@ -79,6 +54,61 @@ nav {
 			display: block;
 			left: auto;
 			right: 0;
+		}
+	}
+
+	a {
+		outline-offset: -8px;
+		padding: 0.65625em 0.875em;
+		white-space: nowrap;
+	}
+
+	a:not(:only-child) {
+		margin: 0;
+		padding-right: 2.25em;
+	}
+
+	a:not(:only-child)::after {
+		content: "\f431";
+		position: absolute;
+		right: 0.625em;
+		top: 0.8125em;
+	}
+
+	ul ul {
+		display: none;
+		border-bottom: 1px solid #d1d1d1;
+		margin: 0;
+		position: absolute;
+		z-index: 9;
+
+		ul {
+			top: -1px;
+		}
+
+		li {
+			background-color: #fff;
+			border: 1px solid #d1d1d1;
+			border-bottom-width: 0;
+		}
+
+		li:hover > ul {
+			right: 100%;
+		}
+
+		a {
+			white-space: normal;
+			width: 12.6875em;
+		}
+
+		a:not(:only-child) {
+			padding-right: 2.0625em;
+		}
+
+		a:not(:only-child)::after {
+			right: 0.5625em;
+			top: 0.875em;
+			transform: rotate(90deg);
 		}
 	}
 }
