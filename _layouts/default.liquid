@@ -21,7 +21,8 @@
 			<h1><a href="/" rel="home">{{ site.title }}</a></h1>
 			<p>{{ site.description }}</p>
 		</div>
-		<button>Menu</button>
+		<input hidden type="checkbox" id="menu-check">
+		<label class="toggle" for="menu-check">Menu</label>
 		<nav>{{ menu | markdownify }}</nav>
 	</header>
 	<main>{{ content }}</main>

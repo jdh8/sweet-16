@@ -48,35 +48,36 @@ header {
 		margin: (7em/13) 0 0;
 	}
 
-	> button {
-		background-color: transparent;
-		border: 1px solid #d1d1d1;
-		color: #1a1a1a;
-		font-size: (13rem/16);
-		margin: (14em/13) 0;
-		padding: (10em/13);
-	}
-
-	> button:hover {
-		background-color: transparent;
-		border-color: #007acc;
-		color: #007acc;
-	}
-
-	> button:focus {
-		background-color: #1a1a1a;
-		border-color: #1a1a1a;
-		color: #fff;
-		outline: thin dotted;
-	}
-
 	> nav {
 		display: none;
 	}
 
-	> button:active + nav {
+	:checked ~ nav {
 		display: block;
 	}
+}
+
+.toggle {
+	background-color: transparent;
+	border: 1px solid #d1d1d1;
+	color: #1a1a1a;
+	font-size: (13rem/16);
+	margin: (14em/13) 0;
+	padding: (10em/13);
+}
+
+.toggle:hover,
+.toggle:focus {
+	background-color: transparent;
+	border-color: #007acc;
+	color: #007acc;
+}
+
+:checked + .toggle {
+	background-color: #1a1a1a;
+	border-color: #1a1a1a;
+	color: #fff;
+	outline: thin dotted;
 }
 
 article {

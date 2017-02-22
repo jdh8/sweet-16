@@ -27,6 +27,10 @@ button:focus {
 	outline-offset: -4px;
 }
 
+.toggle {
+	@extend button;
+}
+
 input,
 textarea {
 	background: #f7f7f7;
