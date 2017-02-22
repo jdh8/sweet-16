@@ -1,5 +1,5 @@
 body {
-	padding: 0 (100%/22);
+	padding: 0 calc(100%/22);
 }
 
 main {
@@ -128,7 +128,7 @@ aside {
 
 aside > section {
 	font-size: 0.8125rem;
-	line-height: (21/13);
+	line-height: calc(21/13);
 }
 
 footer {
