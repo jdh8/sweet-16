@@ -1,0 +1,82 @@
+html::before,
+html::after {
+	background: #1a1a1a;
+	content: "";
+	display: block;
+	height: 21px;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 7;
+}
+
+html::before {
+	top: 0;
+}
+
+html::after {
+	bottom: 0;
+}
+
+html {
+	border: 21px solid #1a1a1a;
+}
+
+main {
+	margin-bottom: 5.25em;
+}
+
+header {
+	padding: 3.9375em (100%/13);
+
+	> div {
+		margin-top: 1.3125em;
+		margin-bottom: 1.3125em;
+	}
+
+	h1 {
+		font-size: 1.75rem;
+		line-height: 1.25;
+	}
+
+	p {
+		display: block;
+	}
+
+	> button {
+		font-size: 1rem;
+		margin: 1.3125em 0;
+		padding: 0.8125em 0.875em 0.6875em;
+	}
+}
+
+article {
+	margin-bottom: 5.25em;
+	margin-right: (300%/13);
+
+	> :first-child {
+		font-size: 2.0625rem;
+		line-height: (14/11);
+	}
+
+	ul,
+	ol {
+		margin-left: 0;
+	}
+
+	li > ul {
+		margin-left: 1.25em;
+	}
+
+	li > ol {
+		margin-left: 1.5em;
+	}
+}
+
+blockquote {
+	margin-left: (-28em/19);
+}
+
+aside {
+	padding-right: (300%/13);
+}

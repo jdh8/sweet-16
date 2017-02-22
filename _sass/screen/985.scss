@@ -1,0 +1,20 @@
+main,
+article {
+	margin-bottom: 7em;
+}
+
+header {
+	padding: 5.25em 0;
+
+}
+
+.post.content {
+	float: right;
+	width: (500%/7);
+}
+
+article > :first-child {
+	font-size: 2.5rem;
+	line-height: 1.225;
+	margin-bottom: 1.05em;
+}
