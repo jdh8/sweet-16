@@ -27,7 +27,7 @@ button:focus {
 	outline-offset: -4px;
 }
 
-.toggle {
+header > label {
 	@extend button;
 }
 

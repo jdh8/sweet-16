@@ -42,12 +42,12 @@ header {
 	p {
 		display: block;
 	}
-}
 
-.toggle {
-	font-size: 1rem;
-	margin: 1.3125em 0;
-	padding: 0.8125em 0.875em 0.6875em;
+	> label {
+		font-size: 1rem;
+		margin: 1.3125em 0;
+		padding: 0.8125em 0.875em 0.6875em;
+	}
 }
 
 article {
