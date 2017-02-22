@@ -19,7 +19,7 @@ header {
 	flex-wrap: wrap;
 	align-items: center;
 
-	> div {
+	> :first-child {
 		margin: 0.875em auto 0.875em 0;
 	}
 
@@ -74,7 +74,7 @@ header {
 		display: none;
 	}
 
-	> button:focus + nav {
+	> button:active + nav {
 		display: block;
 	}
 }

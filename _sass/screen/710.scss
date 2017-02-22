@@ -29,7 +29,7 @@ main {
 header {
 	padding: 3.9375em (100%/13);
 
-	> div {
+	> :first-child {
 		margin-top: 1.3125em;
 		margin-bottom: 1.3125em;
 	}
