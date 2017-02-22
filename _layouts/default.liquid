@@ -15,16 +15,14 @@
 	<link rel="stylesheet" href="/style/main.css">
 </head>
 <body>
+	{% capture menu %}{% include menu.md %}{% endcapture %}
 	<header>
 		<div>
 			<h1><a href="/" rel="home">{{ site.title }}</a></h1>
 			<p>{{ site.description }}</p>
 		</div>
 		<button>Menu</button>
-		<nav>
-			{% capture menu %}{% include menu.md %}{% endcapture %}
-			{{ menu | markdownify }}
-		</nav>
+		<nav>{{ menu | markdownify }}</nav>
 	</header>
 	<main>{{ content }}</main>
 	<aside>
@@ -54,6 +52,7 @@
 		</section>
 	</aside>
 	<footer>
+		<nav>{{ menu | markdownify }}</nav>
 		<small>This blog is styled with Sweet 16, Wordpress 2016 theme in Jekyll.</small>
 	</footer>
 </body>

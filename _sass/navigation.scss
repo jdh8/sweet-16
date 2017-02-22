@@ -20,11 +20,50 @@ a:active {
 
 .content {
 	a {
-	    box-shadow: 0 1px 0 0 currentColor;
+		box-shadow: 0 1px 0 0 currentColor;
 	}
 
 	a:hover,
 	a:focus {
-	    box-shadow: none;
+		box-shadow: none;
 	}
+}
+
+nav {
+	font-family: $sans;
+
+	ul {
+		list-style: none;
+		margin: 0;
+
+		ul {
+			margin-left: 0.875em;
+		}
+	}
+
+	li {
+		border-top: 1px solid #d1d1d1;
+		position: relative;
+	}
+
+	a {
+		color: #1a1a1a;
+		display: block;
+		line-height: 1.3125;
+		padding: 0.84375em 0;
+	}
+
+	a:hover,
+	a:focus {
+		color: #007acc;
+	}
+}
+
+header > nav {
+	flex-basis: 100%;
+	margin: 0.875em 0;
+}
+
+footer > nav {
+	margin-bottom: 1.75em;
 }

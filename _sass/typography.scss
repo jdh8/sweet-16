@@ -31,29 +31,29 @@ blockquote {
 	padding: 0 0 0 (28em/19);
 
 	p {
-	    margin-bottom: (24em/19);
+		margin-bottom: (24em/19);
 	}
 
 	cite,
 	small {
-	    color: #1a1a1a;
-	    display: block;
-	    font-size: 1rem;
-	    line-height: 1.75;
+		color: #1a1a1a;
+		display: block;
+		font-size: 1rem;
+		line-height: 1.75;
 
-	    &::before {
-	        content: "\2014\00a0"; // &mdash;&nbsp;
-	    }
+		&::before {
+			content: "\2014\00a0"; // &mdash;&nbsp;
+		}
 	}
 
 	em,
 	i,
 	cite {
-	    font-style: normal;
+		font-style: normal;
 	}
 
 	> :last-child {
-	    margin-bottom: 0;
+		margin-bottom: 0;
 	}
 }
 

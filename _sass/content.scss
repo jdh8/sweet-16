@@ -20,62 +20,62 @@ header {
 	align-items: center;
 
 	> div {
-	    margin: 0.875em auto 0.875em 0;
+		margin: 0.875em auto 0.875em 0;
 	}
 
 	h1 {
-	    font-family: $sans;
-	    font-size: (23rem/16);
-	    font-weight: 700;
-	    line-height: (28/23);
+		font-family: $sans;
+		font-size: (23rem/16);
+		font-weight: 700;
+		line-height: (28/23);
 
-	    a {
-	        color: #1a1a1a;
-	    }
+		a {
+			color: #1a1a1a;
+		}
 
-	    a:hover,
-	    a:focus {
-	        color: #007acc;
-	    }
+		a:hover,
+		a:focus {
+			color: #007acc;
+		}
 	}
 
 	p {
-	    color: #686868;
-	    display: none;
-	    font-size: (13rem/16);
-	    font-weight: 400;
-	    line-height: (14/13);
-	    margin: (7em/13) 0 0;
+		color: #686868;
+		display: none;
+		font-size: (13rem/16);
+		font-weight: 400;
+		line-height: (14/13);
+		margin: (7em/13) 0 0;
 	}
 
-	button {
-	    background-color: transparent;
-	    border: 1px solid #d1d1d1;
-	    color: #1a1a1a;
-	    font-size: (13rem/16);
-	    margin: (14em/13) 0;
-	    padding: (10em/13);
+	> button {
+		background-color: transparent;
+		border: 1px solid #d1d1d1;
+		color: #1a1a1a;
+		font-size: (13rem/16);
+		margin: (14em/13) 0;
+		padding: (10em/13);
 	}
 
-	button:hover,
-	button:focus {
-	    background-color: transparent;
-	    border-color: #007acc;
-	    color: #007acc;
+	> button:hover {
+		background-color: transparent;
+		border-color: #007acc;
+		color: #007acc;
 	}
 
-	button:focus {
-	    outline: 0;
+	> button:focus {
+		background-color: #1a1a1a;
+		border-color: #1a1a1a;
+		color: #fff;
+		outline: thin dotted;
 	}
 
-	button.on {
-	    background-color: #1a1a1a;
-	    border-color: #1a1a1a;
-	    color: #fff;
+	> nav {
+		display: none;
 	}
 
-	button.on:focus {
-	    outline: thin dotted;
+	> button:focus + nav {
+		display: block;
 	}
 }
 
@@ -86,20 +86,20 @@ article {
 	margin-right: (100%/13);
 
 	> :first-child {
-	    font-family: $sans;
-	    font-size: 1.75rem;
-	    font-weight: 700;
-	    line-height: 1.25;
-	    margin-bottom: 1em;
+		font-family: $sans;
+		font-size: 1.75rem;
+		font-weight: 700;
+		line-height: 1.25;
+		margin-bottom: 1em;
 
-	    a {
-	        color: #1a1a1a;
-	    }
+		a {
+			color: #1a1a1a;
+		}
 
-	    a:hover,
-	    a:focus {
-	        color: #007acc;
-	    }
+		a:hover,
+		a:focus {
+			color: #007acc;
+		}
 	}
 }
 
@@ -112,18 +112,18 @@ footer {
 	padding: 0 (100%/13);
 
 	> small {
-	    color: #686868;
-	    display: block;
-	    font-size: (13rem/16);
-	    line-height: (21rem/13);
+		color: #686868;
+		display: block;
+		font-size: (13rem/16);
+		line-height: (21rem/13);
 
-	    a {
-	        color: #686868;
-	    };
+		a {
+			color: #686868;
+		};
 
-	    a:hover,
-	    a:focus {
-	        color: #007acc;
-	    };
+		a:hover,
+		a:focus {
+			color: #007acc;
+		};
 	}
 }
