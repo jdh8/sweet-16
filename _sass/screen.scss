@@ -13,3 +13,9 @@
 @media screen and (min-width: 61.5625em) {
 	@import "screen/985";
 }
+
+@media screen and (min-width: 85.125em) {
+	body {
+		padding: 0 3.75em;
+	}
+}
