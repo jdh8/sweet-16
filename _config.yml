@@ -1,2 +1,6 @@
+gems:
+  - jekyll-paginate
+
 title: Sweet 16
 description: Wordpress 2016 theme in Jekyll
+paginate: 10

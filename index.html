@@ -1,7 +1,8 @@
 ---
 layout: default
+id: /
 ---
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 	<article>
 		<h2><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
 		<div class="post content">
@@ -14,6 +15,37 @@ layout: default
 		</footer>
 	</article>
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+	<nav>
+		{% if paginator.page > 1 %}
+			<a href="{{ site.baseurl }}/">1</a>
+		{% endif %}
+
+		{% if paginator.previous_page > 2 %}
+			<span>…</span>
+		{% endif %}
+
+		{% if paginator.previous_page > 1 %}
+			<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ paginator.previous_page }}</a>
+		{% endif %}
+
+		<strong>{{ paginator.page }}</strong>
+
+		{% if paginator.next_page < paginator.total_pages %}
+			<a href="{{ site.baseurl }}{{ paginator.next_page_path }}">{{ paginator.next_page }}</a>
+		{% endif %}
+
+		{% assign omitted = paginator.next_page | plus: 1 %}
+		{% if omitted < paginator.total_pages %}
+			<span>…</span>
+		{% endif %}
+
+		{% if paginator.page < paginator.total_pages %}
+			<a href="{{ site.baseurl }}/page{{ paginator.total_pages }}">{{ paginator.total_pages }}</a>
+		{% endif %}
+	</nav>
+{% endif %}
 
 {% comment %}
 vim: filetype=liquid
