@@ -26,9 +26,14 @@ main {
 	margin-bottom: 5.25em;
 }
 
+main,
+aside {
+	padding-right: calc(300% / 13);
+}
+
 article {
 	margin-bottom: 5.25em;
-	margin-right: calc(300% / 13);
+	margin-right: 0;
 }
 
 article > :first-child {
@@ -81,6 +86,11 @@ header > nav {
 	margin: 1.3125em 0;
 }
 
-aside {
-	padding-right: calc(300% / 13);
+.pagination > * {
+	display: inline-block;
+}
+
+.pagination > strong::before,
+.pagination > strong::after {
+	content: none;
 }

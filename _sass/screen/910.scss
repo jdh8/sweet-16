@@ -5,6 +5,7 @@ body {
 main {
 	float: left;
 	margin-right: -100%;
+	padding: 0;
 	width: 70%;
 }
 
@@ -42,18 +43,18 @@ nav li:hover > ul {
 	right: 0;
 }
 
-nav a {
+nav li > a {
 	outline-offset: -8px;
 	padding: 0.65625em 0.875em;
 	white-space: nowrap;
 }
 
-nav a:not(:only-child) {
+nav li > a:not(:only-child) {
 	margin: 0;
 	padding-right: 2.25em;
 }
 
-nav a:not(:only-child)::after {
+nav li > a:not(:only-child)::after {
 	content: "\f431";
 	position: absolute;
 	right: 0.625em;

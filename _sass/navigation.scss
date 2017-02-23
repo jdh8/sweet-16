@@ -47,15 +47,15 @@ nav li {
 	position: relative;
 }
 
-nav a {
+nav li > a {
 	color: #1a1a1a;
 	display: block;
 	line-height: 1.3125;
 	padding: 0.84375em 0;
 }
 
-nav a:hover,
-nav a:focus {
+nav li > a:hover,
+nav li > a:focus {
 	color: #007acc;
 }
 
@@ -66,4 +66,78 @@ header > nav {
 
 footer > nav {
 	margin-bottom: 1.75em;
+}
+
+main > nav {
+	border-top: 4px solid #1a1a1a;
+	border-bottom: none;
+}
+
+.pagination {
+	font-size: 1.1875rem;
+	position: relative;
+}
+
+.pagination > * {
+	display: none;
+	letter-spacing: calc(1em/76);
+	line-height: 1;
+	margin: 0 calc(14em/19) 0 calc(-14em/19);
+	padding: calc(31em/38) calc(14em/19) calc(15em/38);
+	text-transform: uppercase;
+}
+
+.pagination > strong {
+	display: inline-block;
+}
+
+.pagination > strong::before {
+	content: "Page ";
+}
+
+.pagination > .prev,
+.pagination > .next {
+	background-color: #1a1a1a;
+	width: 52px;
+	height: 52px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+}
+
+.pagination > a:empty:hover {
+	background-color: #007acc;
+}
+
+.pagination > a::after {
+	color: #fff;
+}
+
+.pagination > span::after {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination > .prev::after,
+.pagination > .next::after {
+	font-family: Genericons;
+	font-size: 32px;
+	line-height: 48px;
+	width: 52px;
+}
+
+.pagination > .prev {
+	right: 54px;
+}
+
+.pagination > .next {
+	right: 0px;
+}
+
+.pagination > .prev::after {
+	content: "\f430";
+}
+
+.pagination > .next::after {
+	content: "\f429";
 }

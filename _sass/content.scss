@@ -7,6 +7,8 @@ body {
 
 main {
 	margin-bottom: 3.5em;
+	padding-left: calc(100% / 13);
+	padding-right: calc(100% / 13);
 }
 
 main > :last-child {
@@ -16,8 +18,6 @@ main > :last-child {
 article {
 	margin-bottom: 3.5em;
 	position: relative;
-	margin-left: calc(100% / 13);
-	margin-right: calc(100% / 13);
 }
 
 article > footer {
@@ -167,6 +167,10 @@ header > :checked + label {
 aside {
 	margin-bottom: 3.5em;
 	padding: 0 calc(100% / 13);
+}
+
+body > footer {
+	clear: both;
 }
 
 footer {

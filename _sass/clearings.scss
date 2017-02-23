@@ -1,4 +1,5 @@
-main > nav,
-body > footer {
+article::after {
 	clear: both;
+	content: "";
+	display: block;
 }

@@ -17,9 +17,9 @@ id: /
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
-	<nav>
+	<nav class="pagination">
 		{% if paginator.page > 1 %}
-			<a href="{{ site.baseurl }}/">1</a>
+			<a rel="start" href="{{ site.baseurl }}/">1</a>
 		{% endif %}
 
 		{% if paginator.previous_page > 2 %}
@@ -27,22 +27,34 @@ id: /
 		{% endif %}
 
 		{% if paginator.previous_page > 1 %}
-			<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ paginator.previous_page }}</a>
+			<a rel="prev" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ paginator.previous_page }}</a>
 		{% endif %}
 
 		<strong>{{ paginator.page }}</strong>
 
-		{% if paginator.next_page < paginator.total_pages %}
-			<a href="{{ site.baseurl }}{{ paginator.next_page_path }}">{{ paginator.next_page }}</a>
+		{% if paginator.next_page %}
+			<a rel="next" href="{{ site.baseurl }}{{ paginator.next_page_path }}">{{ paginator.next_page }}</a>
+
+			{% assign omitted = paginator.next_page | plus: 1 %}
+			{% if omitted < paginator.total_pages %}
+				<span>…</span>
+			{% endif %}
+
+			{% if paginator.next_page < paginator.total_pages %}
+				<a href="{{ site.baseurl }}/page{{ paginator.total_pages }}">{{ paginator.total_pages }}</a>
+			{% endif %}
 		{% endif %}
 
-		{% assign omitted = paginator.next_page | plus: 1 %}
-		{% if omitted < paginator.total_pages %}
-			<span>…</span>
+		{% if paginator.previous_page %}
+			<a class="prev" rel="prev" href="{{ site.baseurl }}{{ paginator.previous_page_path }}"></a>
+		{% else %}
+			<span class="prev"></span>
 		{% endif %}
 
-		{% if paginator.page < paginator.total_pages %}
-			<a href="{{ site.baseurl }}/page{{ paginator.total_pages }}">{{ paginator.total_pages }}</a>
+		{% if paginator.next_page %}
+			<a class="next" rel="next" href="{{ site.baseurl }}{{ paginator.next_page_path }}"></a>
+		{% else %}
+			<span class="next"></span>
 		{% endif %}
 	</nav>
 {% endif %}
