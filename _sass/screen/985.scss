@@ -57,3 +57,11 @@ header > :first-child {
 	margin-top: 1.75em;
 	margin-bottom: 1.75em;
 }
+
+footer > div::after {
+	display: none;
+}
+
+article > footer {
+	display: block;
+}

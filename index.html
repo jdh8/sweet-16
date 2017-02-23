@@ -7,7 +7,11 @@ layout: default
 		<div class="post content">
 			{{ post.content }}
 		</div>
-		<footer></footer>
+		<footer>
+			<div><time>{{ post.date | date: "%F" }}</time></div>
+			<div>{{ post.categories | join: ", " }}</div>
+			<div>{{ post.tags | join: ", " }}</div>
+		</footer>
 	</article>
 {% endfor %}
 

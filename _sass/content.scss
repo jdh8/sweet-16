@@ -20,6 +20,14 @@ article {
 	margin-right: calc(100% / 13);
 }
 
+article > footer {
+	font-family: $sans;
+	padding-left: 0;
+	padding-right: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
 article > :first-child {
 	font-family: $sans;
 	font-size: 1.75rem;
@@ -163,20 +171,26 @@ aside {
 
 footer {
 	padding: 0 calc(100% / 13);
-}
-
-footer > small {
 	color: #686868;
-	display: block;
 	font-size: calc(13rem / 16);
 	line-height: calc(21 / 13);
 }
 
-footer > small a {
+footer a {
 	color: #686868;
 };
 
-footer > small a:hover,
-footer > small a:focus {
+footer a:hover,
+footer a:focus {
 	color: #007acc;
 };
+
+footer > div {
+	margin-bottom: calc(7em / 16);
+}
+
+footer > div:not(:last-child)::after {
+	content: "/";
+	opacity: 0.7;
+	padding: 0 calc(7em / 16);
+}
