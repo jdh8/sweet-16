@@ -32,7 +32,18 @@ header > label {
 	cursor: pointer;
 }
 
-input,
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="week"],
+input[type="month"],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
 textarea {
 	background: #f7f7f7;
 	border: 1px solid #d1d1d1;

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Inverted minors considered harmful with strong notrump
-categories: bridge
-tags: convention
+categories: Bridge
+tags: Convention
 ---
 <style scoped>.redsuit { color: #d33 }</style>
 I have been researching on [Wbridge5][wbr5], a prominent bridge program.  I was

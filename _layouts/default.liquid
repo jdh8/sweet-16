@@ -30,18 +30,18 @@
 		<section>
 			<h2>Categories</h2>
 			<ul>
-				{% for category in site.categories %}
+				{% assign categories = site.categories | sort %}
+				{% for category in categories %}
 					<li>{{ category[0] }}</li>
 				{% endfor %}
 			</ul>
 		</section>
-		<section>
+		<section class="tagcloud">
 			<h2>Tags</h2>
-			<ul>
-				{% for tag in site.tags %}
-					<li>{{ tag[0] }}</li>
-				{% endfor %}
-			</ul>
+			{% assign tags = site.tags | sort %}
+			{% for tag in tags %}
+				<a>{{ tag[0] }}</a>
+			{% endfor %}
 		</section>
 		<section>
 			<h2>Recent posts</h2>
@@ -54,7 +54,7 @@
 	</aside>
 	<footer>
 		<nav>{{ menu | markdownify }}</nav>
-		<small>This blog is styled with Sweet 16, Wordpress 2016 theme in Jekyll.</small>
+		<small>This blog is styled with Sweet 16.</small>
 	</footer>
 </body>
 </html>

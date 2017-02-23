@@ -21,3 +21,20 @@ aside > section > :first-child {
 aside > section > :first-child:empty {
 	margin-bottom: 0;
 }
+
+.tagcloud > a {
+	border: 1px solid #d1d1d1;
+	border-radius: 2px;
+	display: inline-block;
+	font-family: $sans;
+	line-height: 1;
+	margin: 0 0.1875em 0.4375em 0;
+	padding: 0.5625em 0.4375em 0.5em;
+}
+
+.tagcloud > a:hover,
+.tagcloud > a:focus {
+	border-color: #007acc;
+	color: #007acc;
+	outline: 0;
+}

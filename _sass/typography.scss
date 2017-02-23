@@ -13,6 +13,7 @@ h3,
 h4,
 h5,
 h6 {
+	clear: both;
 	margin: 0;
 }
 
@@ -80,6 +81,10 @@ pre {
 code {
 	background-color: #d1d1d1;
 	padding: 0.125em 0.25em;
+}
+
+pre > code {
+	background-color: transparent;
 }
 
 abbr {

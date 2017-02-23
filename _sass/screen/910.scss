@@ -131,6 +131,15 @@ aside > section {
 	line-height: calc(21 / 13);
 }
 
+aside > section > :first-child {
+	margin-bottom: 1.3125em;
+}
+
+.tagcloud > a {
+	margin: 0 calc(3em/13) calc(7em/13) 0;
+	padding: calc(7em/13) calc(6em/13) calc(6em/13);
+}
+
 footer {
 	display: flex;
 	flex-wrap: wrap;
