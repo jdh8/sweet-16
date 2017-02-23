@@ -29,6 +29,7 @@ button:focus {
 
 header > label {
 	@extend button;
+	cursor: pointer;
 }
 
 input,

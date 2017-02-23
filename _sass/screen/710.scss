@@ -28,12 +28,12 @@ main {
 
 article {
 	margin-bottom: 5.25em;
-	margin-right: calc(300%/13);
+	margin-right: calc(300% / 13);
 }
 
 article > :first-child {
 	font-size: 2.0625rem;
-	line-height: calc(14/11);
+	line-height: calc(14 / 11);
 }
 
 article ul,
@@ -50,11 +50,11 @@ article li > ol {
 }
 
 blockquote {
-	margin-left: calc(-28em/19);
+	margin-left: calc(-28em / 19);
 }
 
 header {
-	padding: 3.9375em calc(100%/13);
+	padding: 3.9375em calc(100% / 13);
 }
 
 header > :first-child {
@@ -82,5 +82,5 @@ header > nav {
 }
 
 aside {
-	padding-right: calc(300%/13);
+	padding-right: calc(300% / 13);
 }

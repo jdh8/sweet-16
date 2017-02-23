@@ -11,14 +11,14 @@ article > :first-child {
 
 .post.content {
 	float: right;
-	width: calc(500%/7);
+	width: calc(500% / 7);
 }
 
 .content h1 {
 	font-size: 2.0625rem;
-	line-height: calc(14/11);
-	margin-top: calc(56em/33);
-	margin-bottom: calc(28em/33);
+	line-height: calc(14 / 11);
+	margin-top: calc(56em / 33);
+	margin-bottom: calc(28em / 33);
 }
 
 .content h2 {
@@ -30,22 +30,22 @@ article > :first-child {
 
 h3 {
 	font-size: 1.4375rem;
-	line-height: calc(28/23);
-	margin-top: calc(56em/23);
-	margin-bottom: calc(28em/23);
+	line-height: calc(28 / 23);
+	margin-top: calc(56em / 23);
+	margin-bottom: calc(28em / 23);
 }
 
 h4,
 h5,
 h6 {
 	font-size: 1.1875rem;
-	line-height: calc(21/19);
-	margin-top: calc(56em/19);
-	margin-bottom: calc(28em/19);
+	line-height: calc(21 / 19);
+	margin-top: calc(56em / 19);
+	margin-bottom: calc(28em / 19);
 }
 
 h4 {
-	letter-spacing: calc(2.5em/19);
+	letter-spacing: calc(2.5em / 19);
 }
 
 header {

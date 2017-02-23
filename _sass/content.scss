@@ -16,8 +16,8 @@ main > :last-child {
 article {
 	margin-bottom: 3.5em;
 	position: relative;
-	margin-left: calc(100%/13);
-	margin-right: calc(100%/13);
+	margin-left: calc(100% / 13);
+	margin-right: calc(100% / 13);
 }
 
 article > :first-child {
@@ -46,16 +46,16 @@ article > :first-child > a:focus {
 
 .content h2 {
 	font-size: 1.4375rem;
-	line-height: calc(28/23);
-	margin-top: calc(56em/23);
-	margin-bottom: calc(28em/23);
+	line-height: calc(28 / 23);
+	margin-top: calc(56em / 23);
+	margin-bottom: calc(28em / 23);
 }
 
 h3 {
 	font-size: 1.1875rem;
-	line-height: calc(21/19);
-	margin-top: calc(56em/19);
-	margin-bottom: calc(28em/19);
+	line-height: calc(21 / 19);
+	margin-top: calc(56em / 19);
+	margin-bottom: calc(28em / 19);
 }
 
 h4,
@@ -90,7 +90,7 @@ h6 {
 }
 
 header {
-	padding: 2.625em calc(100%/13);
+	padding: 2.625em calc(100% / 13);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -102,9 +102,9 @@ header > :first-child {
 
 header h1 {
 	font-family: $sans;
-	font-size: calc(23rem/16);
+	font-size: calc(23rem / 16);
 	font-weight: 700;
-	line-height: calc(28/23);
+	line-height: calc(28 / 23);
 }
 
 header h1 > a {
@@ -119,10 +119,10 @@ header h1 > a:focus {
 header p {
 	color: #686868;
 	display: none;
-	font-size: calc(13rem/16);
+	font-size: calc(13rem / 16);
 	font-weight: 400;
-	line-height: calc(14/13);
-	margin: calc(7em/13) 0 0;
+	line-height: calc(14 / 13);
+	margin: calc(7em / 13) 0 0;
 }
 
 header > nav {
@@ -137,9 +137,9 @@ header > label {
 	background-color: transparent;
 	border: 1px solid #d1d1d1;
 	color: #1a1a1a;
-	font-size: calc(13rem/16);
-	margin: calc(14em/13) 0;
-	padding: calc(10em/13);
+	font-size: calc(13rem / 16);
+	margin: calc(14em / 13) 0;
+	padding: calc(10em / 13);
 }
 
 header > label:hover,
@@ -158,18 +158,18 @@ header > :checked + label {
 
 aside {
 	margin-bottom: 3.5em;
-	padding: 0 calc(100%/13);
+	padding: 0 calc(100% / 13);
 }
 
 footer {
-	padding: 0 calc(100%/13);
+	padding: 0 calc(100% / 13);
 }
 
 footer > small {
 	color: #686868;
 	display: block;
-	font-size: calc(13rem/16);
-	line-height: calc(21/13);
+	font-size: calc(13rem / 16);
+	line-height: calc(21 / 13);
 }
 
 footer > small a {
