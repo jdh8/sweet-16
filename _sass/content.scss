@@ -1,14 +1,14 @@
 body {
 	margin: 0 auto;
-	max-width: 1320px;
+	max-width: 1.1 * 75em;
 	word-wrap: break-word;
 	hyphens: auto;
 }
 
 main {
 	margin-bottom: 3.5em;
-	padding-left: calc(100% / 13);
-	padding-right: calc(100% / 13);
+	padding-left: 7.6923076923076923%;
+	padding-right: 7.6923076923076923%;
 }
 
 main > :last-child {
@@ -20,20 +20,56 @@ article {
 	position: relative;
 }
 
-article > footer {
-	font-family: $sans;
-	padding-left: 0;
-	padding-right: 0;
-	display: flex;
-	flex-wrap: wrap;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 900;
+	margin-bottom: 1.75rem;
+
+	* + & {
+		margin-top: 3.5rem;
+	}
+}
+
+article > :first-child,
+h1 {
+	font-size: 1.75rem;
+	line-height: 2.1875rem;
+}
+
+header h1,
+h2 {
+	font-size: 1.4375rem;
+	line-height: 1.75rem;
+}
+
+h3 {
+	font-size: 1.1875rem;
+	line-height: 1.3125rem;
+}
+
+h4,
+h5,
+h6 {
+	font-size: 1rem;
+	line-height: 1.3125rem;
+}
+
+h4 {
+	letter-spacing: 0.140625em; // 2.25px
+	text-transform: uppercase;
+}
+
+h6 {
+	font-style: italic;
 }
 
 article > :first-child {
 	font-family: $sans;
-	font-size: 1.75rem;
 	font-weight: 700;
-	line-height: 1.25;
-	margin-bottom: 1em;
 }
 
 article > :first-child > a {
@@ -45,60 +81,8 @@ article > :first-child > a:focus {
 	color: #007acc;
 }
 
-.content h1 {
-	font-size: 1.75rem;
-	line-height: 1.25;
-	margin-top: 2em;
-	margin-bottom: 1em;
-}
-
-.content h2 {
-	font-size: 1.4375rem;
-	line-height: calc(28 / 23);
-	margin-top: calc(56em / 23);
-	margin-bottom: calc(28em / 23);
-}
-
-h3 {
-	font-size: 1.1875rem;
-	line-height: calc(21 / 19);
-	margin-top: calc(56em / 19);
-	margin-bottom: calc(28em / 19);
-}
-
-h4,
-h5,
-h6 {
-	font-size: 1rem;
-	line-height: 1.3125;
-	margin-top: 3.5em;
-	margin-bottom: 1.75em;
-}
-
-h4 {
-	letter-spacing: 0.140625em;
-	text-transform: uppercase;
-}
-
-h6 {
-	font-style: italic;
-}
-
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6 {
-	font-weight: 900;
-}
-
-.content > :first-child {
-	margin-top: 0;
-}
-
 header {
-	padding: 2.625em calc(100% / 13);
+	padding: 2.625em 7.6923076923076923%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -110,9 +94,8 @@ header > :first-child {
 
 header h1 {
 	font-family: $sans;
-	font-size: calc(23rem / 16);
 	font-weight: 700;
-	line-height: calc(28 / 23);
+	margin: 0;
 }
 
 header h1 > a {
@@ -127,10 +110,10 @@ header h1 > a:focus {
 header p {
 	color: #686868;
 	display: none;
-	font-size: calc(13rem / 16);
+	font-size: 0.8125rem;
 	font-weight: 400;
-	line-height: calc(14 / 13);
-	margin: calc(7em / 13) 0 0;
+	line-height: 0.875rem;
+	margin: 0.4375rem 0 0;
 }
 
 header > nav {
@@ -145,9 +128,9 @@ header > label {
 	background-color: transparent;
 	border: 1px solid #d1d1d1;
 	color: #1a1a1a;
-	font-size: calc(13rem / 16);
-	margin: calc(14em / 13) 0;
-	padding: calc(10em / 13);
+	font-size: 0.8125rem;
+	margin: 0.875rem 0;
+	padding: 0.625rem;
 }
 
 header > label:hover,
@@ -166,35 +149,56 @@ header > :checked + label {
 
 aside {
 	margin-bottom: 3.5em;
-	padding: 0 calc(100% / 13);
+	padding: 0 7.6923076923076923%;
+}
+
+footer {
+	padding: 0 7.6923076923076923%;
+	color: #686868;
+	font-size: 0.8125rem;
+	line-height: 1.3125rem;
 }
 
 body > footer {
 	clear: both;
 }
 
-footer {
-	padding: 0 calc(100% / 13);
-	color: #686868;
-	font-size: calc(13rem / 16);
-	line-height: calc(21 / 13);
+article > footer {
+	font-family: $sans;
+	padding-left: 0;
+	padding-right: 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-footer a {
-	color: #686868;
-};
-
-footer a:hover,
-footer a:focus {
-	color: #007acc;
-};
-
 footer > div {
-	margin-bottom: calc(7em / 16);
+	margin-bottom: 0.4375em;
 }
 
 footer > div:not(:last-child)::after {
 	content: "/";
 	opacity: 0.7;
-	padding: 0 calc(7em / 16);
+	padding: 0 0.4375rem;
+}
+
+@viewport {
+	width: device-width;
+}
+
+@media screen and (min-width: 44.375em) {
+	@import "screen/44.375";
+}
+
+@media screen and (min-width: 56.875em) {
+	@import "screen/56.875";
+}
+
+@media screen and (min-width: 61.5625em) {
+	@import "screen/61.5625";
+}
+
+@media screen and (min-width: 85.125em) {
+	body {
+		padding: 0 3.75em;
+	}
 }

@@ -3,11 +3,18 @@ a {
 	text-decoration: none;
 }
 
+footer a,
 a:hover,
 a:focus,
 a:active {
 	color: #686868;
 }
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+	color: #007acc;
+};
 
 a:focus {
 	outline: thin dotted;
@@ -82,10 +89,10 @@ main > nav {
 
 .pagination > * {
 	display: none;
-	letter-spacing: calc(1em/76);
+	letter-spacing: 0.015625rem; // 0.25px
 	line-height: 1;
-	margin: 0 calc(14em/19) 0 calc(-14em/19);
-	padding: calc(31em/38) calc(14em/19) calc(15em/38);
+	margin: 0 0.875rem 0 0.875rem;
+	padding: 0.96875rem 0.875rem 0.46875rem;
 	text-transform: uppercase;
 }
 

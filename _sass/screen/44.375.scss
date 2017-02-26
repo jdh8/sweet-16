@@ -28,7 +28,7 @@ main {
 
 main,
 aside {
-	padding-right: calc(300% / 13);
+	padding-right: 23.0769230769230769%
 }
 
 article {
@@ -38,7 +38,7 @@ article {
 
 article > :first-child {
 	font-size: 2.0625rem;
-	line-height: calc(14 / 11);
+	line-height: 2.625rem;
 }
 
 article ul,
@@ -55,11 +55,11 @@ article li > ol {
 }
 
 blockquote {
-	margin-left: calc(-28em / 19);
+	margin-left: -1.75rem;
 }
 
 header {
-	padding: 3.9375em calc(100% / 13);
+	padding: 3.9375em 7.6923076923076923%
 }
 
 header > :first-child {

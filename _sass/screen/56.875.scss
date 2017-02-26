@@ -1,5 +1,5 @@
 body {
-	padding: 0 calc(100% / 22);
+	padding: 0 4.54545454545454545%
 }
 
 main {
@@ -133,7 +133,7 @@ aside {
 
 aside > section {
 	font-size: 0.8125rem;
-	line-height: calc(21 / 13);
+	line-height: 1.3125rem;
 }
 
 aside > section > :first-child {
@@ -141,8 +141,8 @@ aside > section > :first-child {
 }
 
 .tagcloud > a {
-	margin: 0 calc(3em/13) calc(7em/13) 0;
-	padding: calc(7em/13) calc(6em/13) calc(6em/13);
+	margin: 0 0.1875rem 0.4375rem 0;
+	padding: 0.4375rem 0.375rem 0.375rem;
 }
 
 footer {

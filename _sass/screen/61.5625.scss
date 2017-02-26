@@ -11,41 +11,33 @@ article > :first-child {
 
 .post.content {
 	float: right;
-	width: calc(500% / 7);
+	width: 71.4285714285714285%
 }
 
-.content h1 {
+h1 {
 	font-size: 2.0625rem;
-	line-height: calc(14 / 11);
-	margin-top: calc(56em / 33);
-	margin-bottom: calc(28em / 33);
+	line-height: 2.625rem;
 }
 
-.content h2 {
+h2 {
 	font-size: 1.75rem;
 	line-height: 1.25;
-	margin-top: 2em;
-	margin-bottom: 1em;
 }
 
 h3 {
 	font-size: 1.4375rem;
-	line-height: calc(28 / 23);
-	margin-top: calc(56em / 23);
-	margin-bottom: calc(28em / 23);
+	line-height: 1.75rem;
 }
 
 h4,
 h5,
 h6 {
 	font-size: 1.1875rem;
-	line-height: calc(21 / 19);
-	margin-top: calc(56em / 19);
-	margin-bottom: calc(28em / 19);
+	line-height: 1.3125rem;
 }
 
 h4 {
-	letter-spacing: calc(2.5em / 19);
+	letter-spacing: 0.15625rem;
 }
 
 header {
