@@ -41,6 +41,7 @@ h1 {
 }
 
 header h1,
+main > h1,
 h2 {
 	font-size: 1.4375rem;
 	line-height: 1.75rem;
@@ -67,6 +68,7 @@ h6 {
 	font-style: italic;
 }
 
+main > h1,
 article > :first-child {
 	font-family: $sans;
 	font-weight: 700;
@@ -79,6 +81,10 @@ article > :first-child > a {
 article > :first-child > a:hover,
 article > :first-child > a:focus {
 	color: #007acc;
+}
+
+main > h1 {
+	margin-bottom: 3.5rem;
 }
 
 header {
