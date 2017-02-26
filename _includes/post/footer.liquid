@@ -1,0 +1,13 @@
+<div><time>{{ include.post.date | date: "%F" }}</time></div>
+<div>
+	{% for category in include.post.categories %}
+		<a rel="category tag" href="{{ site.baseurl }}/category/{{ category | slugify }}">
+			{{ category }}</a>{% unless forloop.last %},{% endunless %}
+	{% endfor %}
+</div>
+<div>
+	{% for tag in include.post.tags %}
+		<a rel="tag" href="{{ site.baseurl }}/tag/{{ tag | slugify }}">
+			{{ tag }}</a>{% unless forloop.last %},{% endunless %}
+	{% endfor %}
+</div>

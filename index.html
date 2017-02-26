@@ -5,14 +5,8 @@ id: /
 {% for post in paginator.posts %}
 	<article>
 		<h2><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
-		<div class="post content">
-			{{ post.content }}
-		</div>
-		<footer>
-			<div><time>{{ post.date | date: "%F" }}</time></div>
-			<div>{{ post.categories | join: ", " }}</div>
-			<div>{{ post.tags | join: ", " }}</div>
-		</footer>
+		<div class="post content">{{ post.content }}</div>
+		<footer>{% include post/footer.liquid post = post %}</footer>
 	</article>
 {% endfor %}
 

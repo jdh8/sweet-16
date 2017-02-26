@@ -7,9 +7,5 @@ layout: default
 		{{ content }}
 		<address></address>
 	</div>
-	<footer>
-		<div><time>{{ page.date | date: "%F" }}</time></div>
-		<div>{{ page.categories | join: ", " }}</div>
-		<div>{{ page.tags | join: ", " }}</div>
-	</footer>
+	<footer>{% include post/footer.liquid post = page %}</footer>
 </article>
