@@ -22,7 +22,9 @@ About me
 --------
 <div id="avatar">
 <a href="https://www.gravatar.com/avatar/a28b050d0206b3d418551203ddd83cba?s=800">
-<img alt="Chen-Pang He" src="https://www.gravatar.com/avatar/a28b050d0206b3d418551203ddd83cba?s=200" width="200" height="200">
+<img alt="Chen-Pang He" width="200" height="200"
+	src="https://www.gravatar.com/avatar/a28b050d0206b3d418551203ddd83cba?s=200"
+	srcset="https://www.gravatar.com/avatar/a28b050d0206b3d418551203ddd83cba?s=400 2x">
 </a>
 </div>
 
