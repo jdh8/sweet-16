@@ -202,3 +202,15 @@ footer > div:not(:last-child)::after {
 		padding: 0 3.75em;
 	}
 }
+
+@media print {
+	body > header > label,
+	body > aside,
+	nav {
+		display: none;
+	}
+
+	body > header > :first-child > p {
+		display: block;
+	}
+}
