@@ -18,10 +18,12 @@ a:active {
 	outline: 0;
 }
 
+footer a:hover,
 .content a {
 	box-shadow: 0 1px 0 0 currentColor;
 }
 
+nav a:hover,
 .content a:hover,
 .content a:focus {
 	box-shadow: none;
