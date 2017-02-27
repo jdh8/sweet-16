@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<header>
+	<h1>Tag: {{ page.title }}</h1>
+	{{ content }}
+</header>
+{% assign tag = site.tags[page.title] %}
+{% include series.liquid posts=tag %}

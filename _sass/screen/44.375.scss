@@ -59,21 +59,21 @@ blockquote {
 }
 
 header {
-	padding: 3.9375em 7.6923076923076923%
+	padding: 3.9375rem 7.6923076923076923%
 }
 
-header > :first-child {
-	margin-top: 1.3125em;
-	margin-bottom: 1.3125em;
+body > header > :first-child {
+	margin-top: 1.3125rem;
+	margin-bottom: 1.3125rem;
+}
+
+body > header p {
+	display: block;
 }
 
 header h1 {
 	font-size: 1.75rem;
 	line-height: 1.25;
-}
-
-header p {
-	display: block;
 }
 
 header > label {

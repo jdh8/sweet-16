@@ -41,13 +41,13 @@ h4 {
 }
 
 header {
-	padding: 5.25em 0;
+	padding: 5.25rem 0;
 }
 
-header > nav,
-header > :first-child {
-	margin-top: 1.75em;
-	margin-bottom: 1.75em;
+body > header > :first-child,
+header > nav {
+	margin-top: 1.75rem;
+	margin-bottom: 1.75rem;
 }
 
 footer > div::after {

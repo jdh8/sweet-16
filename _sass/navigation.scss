@@ -3,6 +3,7 @@ a {
 	text-decoration: none;
 }
 
+header a,
 footer a,
 a:hover,
 a:focus,
@@ -10,10 +11,13 @@ a:active {
 	color: #686868;
 }
 
-footer a:hover,
-footer a:focus,
-footer a:active {
-	color: #007acc;
+header,
+footer {
+	a:hover,
+	a:focus,
+	a:active {
+		color: #007acc;
+	}
 };
 
 a:focus {
@@ -25,6 +29,7 @@ a:active {
 	outline: 0;
 }
 
+header a:hover,
 footer a:hover,
 .content a {
 	box-shadow: 0 1px 0 0 currentColor;

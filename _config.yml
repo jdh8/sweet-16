@@ -2,5 +2,8 @@ gems:
   - jekyll-paginate
 
 title: Sweet 16
-description: Wordpress 2016 theme in Jekyll
+description:
+    <a href="https://wordpress.org/themes/twentysixteen/" rel="external">Wordpress 2016 theme</a>
+    in <a href="https://jekyllrb.com/" rel="external">Jekyll</a>
+
 paginate: 10

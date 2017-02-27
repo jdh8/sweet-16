@@ -41,6 +41,7 @@ h1 {
 }
 
 header h1,
+main > header > h1,
 main > h1,
 h2 {
 	font-size: 1.4375rem;
@@ -83,24 +84,38 @@ article > :first-child > a:focus {
 	color: #007acc;
 }
 
+main > header {
+	display: block;
+	padding: 0;
+	margin-bottom: 3.5rem;
+}
+
 main > h1 {
 	margin-bottom: 3.5rem;
 }
 
-.collection {
+main > header {
 	border-top: 4px solid #1a1a1a;
 	padding-top: 1.75rem;
 }
 
 header {
-	padding: 2.625em 7.6923076923076923%;
+	color: #686868;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	line-height: 0.875rem;
+	padding: 2.625rem 7.6923076923076923%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-header > :first-child {
+body > header > :first-child {
 	margin: 0.875em auto 0.875em 0;
+}
+
+body > header p {
+	display: none;
 }
 
 header h1 {
@@ -109,6 +124,7 @@ header h1 {
 	margin: 0;
 }
 
+header h1,
 header h1 > a {
 	color: #1a1a1a;
 }
@@ -119,11 +135,6 @@ header h1 > a:focus {
 }
 
 header p {
-	color: #686868;
-	display: none;
-	font-size: 0.8125rem;
-	font-weight: 400;
-	line-height: 0.875rem;
 	margin: 0.4375rem 0 0;
 }
 
