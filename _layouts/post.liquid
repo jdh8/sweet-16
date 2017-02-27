@@ -8,7 +8,7 @@ layout: default
 		<address></address>
 	</div>
 	<footer>
-		<div><time>{{ post.date | date: "%F" }}</time></div>
+		<div><time>{{ page.date }}</time></div>
 		<div>
 			{% for category in page.categories %}
 				<a rel="category tag" href="{{ site.baseurl }}/category/{{ category | slugify }}">
