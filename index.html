@@ -24,6 +24,14 @@ id: /
 	</article>
 {% endfor %}
 
+{% unless paginator.posts %}
+	<h1 class="collection">Nothing Found</h1>
+	<p>
+		It seems we can’t find what you’re looking for.
+		{% comment %} Perhaps searching can help. {% endcomment %}
+	</p>
+{% endunless %}
+
 {% if paginator.total_pages > 1 %}
 	<nav class="pagination">
 		{% if paginator.page > 1 %}
