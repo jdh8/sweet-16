@@ -13,81 +13,81 @@ article {
 	margin: 0;
 }
 
-header {
+body > header {
 	padding-left: 0;
 	padding-right: 0;
 	align-items: flex-start;
 }
 
-header > label {
+.toggle {
 	display: none;
 }
 
-header > nav {
+header > .menu {
 	display: block;
 	margin-right: -0.875em;
 	flex-basis: auto;
 }
 
-nav {
+.menu {
 	border: 0;
 }
 
-nav li:hover > a {
+.menu li:hover > a {
 	color: #007acc;
 }
 
-nav li:hover > ul {
+.menu li:hover > ul {
 	display: block;
 	left: auto;
 	right: 0;
 }
 
-nav li > a {
+.menu li > a {
 	outline-offset: -8px;
 	padding: 0.65625em 0.875em;
 	white-space: nowrap;
 }
 
-nav li > a:not(:only-child) {
+.menu li > a:not(:only-child) {
 	margin: 0;
 	padding-right: 2.25em;
 }
 
-nav li > a:not(:only-child)::after {
+.menu li > a:not(:only-child)::after {
 	content: "\f431";
 	position: absolute;
 	right: 0.625em;
 	top: 0.8125em;
 }
 
-nav > ul > li {
+.menu > ul > li {
 	border: 0;
 	float: left;
 }
 
-nav > ul > li > ul::before,
-nav > ul > li > ul::after {
+.menu > ul > li > ul::before,
+.menu > ul > li > ul::after {
 	content: "";
 	border-style: solid;
 	position: absolute;
 }
 
-nav > ul > li > ul::before {
+.menu > ul > li > ul::before {
 	border-color: #d1d1d1 transparent;
 	border-width: 0 10px 10px;
 	right: 9px;
 	top: -9px;
 }
 
-nav > ul > li > ul::after {
+.menu > ul > li > ul::after {
 	border-color: #fff transparent;
 	border-width: 0 8px 8px;
 	right: 11px;
 	top: -7px;
 }
 
-nav ul ul {
+.menu ul ul {
 	display: none;
 	border-bottom: 1px solid #d1d1d1;
 	margin: 0;
@@ -95,30 +95,30 @@ nav ul ul {
 	z-index: 9;
 }
 
-nav ul ul ul {
+.menu ul ul ul {
 	top: -1px;
 }
 
-nav ul ul li {
+.menu ul ul li {
 	background-color: #fff;
 	border: 1px solid #d1d1d1;
 	border-bottom-width: 0;
 }
 
-nav ul ul li:hover > ul {
+.menu ul ul li:hover > ul {
 	right: 100%;
 }
 
-nav ul ul a {
+.menu ul ul a {
 	white-space: normal;
 	width: 12.6875em;
 }
 
-nav ul ul a:not(:only-child) {
+.menu ul ul a:not(:only-child) {
 	padding-right: 2.0625em;
 }
 
-nav ul ul a:not(:only-child)::after {
+.menu ul ul a:not(:only-child)::after {
 	right: 0.5625em;
 	top: 0.875em;
 	transform: rotate(90deg);
@@ -136,7 +136,7 @@ aside > section {
 	line-height: 1.3125rem;
 }
 
-aside > section > :first-child {
+aside > section > h2 {
 	margin-bottom: 1.3125em;
 }
 

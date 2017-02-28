@@ -9,7 +9,7 @@ aside > section {
 	padding-top: 1.75em;
 }
 
-aside > section > :first-child {
+aside > section > h2 {
 	font-family: $sans;
 	font-size: 1rem;
 	font-weight: 700;
@@ -19,7 +19,7 @@ aside > section > :first-child {
 	text-transform: uppercase;
 }
 
-aside > section > :first-child:empty {
+aside > section > h2:empty {
 	margin-bottom: 0;
 }
 

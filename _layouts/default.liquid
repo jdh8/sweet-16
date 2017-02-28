@@ -23,13 +23,13 @@
 <body>
 	{% capture menu %}{% include menu.md %}{% endcapture %}
 	<header>
-		<div>
-			<h1><a href="{{ site.baseurl }}/" rel="home">{{ site.title }}</a></h1>
+		<div class="brand">
+			<h1 class="title"><a href="{{ site.baseurl }}/" rel="home">{{ site.title }}</a></h1>
 			<p>{{ site.description }}</p>
 		</div>
-		<input hidden type="checkbox" id="menu-check">
-		<label for="menu-check">Menu</label>
-		<nav>{{ menu | markdownify }}</nav>
+		<input hidden type="checkbox" id="ballot">
+		<label class="toggle" for="ballot">Menu</label>
+		<nav class="menu">{{ menu | markdownify }}</nav>
 	</header>
 	<main>{{ content }}</main>
 	<aside>
@@ -59,7 +59,7 @@
 		</section>
 	</aside>
 	<footer>
-		<nav>{{ menu | markdownify }}</nav>
+		<nav class="menu">{{ menu | markdownify }}</nav>
 		<p>This blog is styled with <a rel="publisher" href="https://jdh8.github.io/sweet-16/">Sweet 16</a>.</p>
 	</footer>
 </body>

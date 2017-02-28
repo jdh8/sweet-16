@@ -5,6 +5,10 @@ a {
 
 header a,
 footer a,
+.title > a {
+	color: inherit;
+}
+
 a:hover,
 a:focus,
 a:active {
@@ -12,7 +16,8 @@ a:active {
 }
 
 header,
-footer {
+footer,
+.title > {
 	a:hover,
 	a:focus,
 	a:active {
@@ -35,51 +40,51 @@ footer a:hover,
 	box-shadow: 0 1px 0 0 currentColor;
 }
 
-header h1 a:hover,
 nav a:hover,
+.title > a:hover,
 .content a:hover,
 .content a:focus {
 	box-shadow: none;
 }
 
-nav {
+.menu {
 	font-family: $sans;
 	font-size: 1rem;
 	border-bottom: 1px solid #d1d1d1;
 }
 
-nav ul {
+.menu ul {
 	list-style: none;
 	margin: 0;
 }
 
-nav ul ul {
+.menu ul ul {
 	margin-left: 0.875em;
 }
 
-nav li {
+.menu li {
 	border-top: 1px solid #d1d1d1;
 	position: relative;
 }
 
-nav li > a {
+.menu li > a {
 	color: #1a1a1a;
 	display: block;
 	line-height: 1.3125;
 	padding: 0.84375em 0;
 }
 
-nav li > a:hover,
-nav li > a:focus {
+.menu li > a:hover,
+.menu li > a:focus {
 	color: #007acc;
 }
 
-header > nav {
+header > .menu {
 	flex-basis: 100%;
 	margin: 0.875em 0;
 }
 
-footer > nav {
+footer > .menu {
 	margin-bottom: 1.75em;
 }
 
@@ -89,6 +94,7 @@ main > nav {
 }
 
 .pagination {
+	font-family: $sans;
 	font-size: 1.1875rem;
 	position: relative;
 }
@@ -97,7 +103,7 @@ main > nav {
 	display: none;
 	letter-spacing: 0.015625rem; // 0.25px
 	line-height: 1;
-	margin: 0 0.875rem 0 0.875rem;
+	margin: 0 0.875rem 0 -0.875rem;
 	padding: 0.96875rem 0.875rem 0.46875rem;
 	text-transform: uppercase;
 }

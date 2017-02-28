@@ -1,0 +1,9 @@
+.toggle,
+body > aside,
+nav:not(article nav) {
+	display: none;
+}
+
+.brand > p {
+	display: block;
+}

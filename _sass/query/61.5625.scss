@@ -3,7 +3,7 @@ article {
 	margin-bottom: 7em;
 }
 
-article > :first-child {
+article .title {
 	font-size: 2.5rem;
 	line-height: 1.225;
 	margin-bottom: 1.05em;
@@ -40,12 +40,12 @@ h4 {
 	letter-spacing: 0.15625rem;
 }
 
-header {
+body > header {
 	padding: 5.25rem 0;
 }
 
-body > header > :first-child,
-header > nav {
+.brand,
+header > .menu {
 	margin-top: 1.75rem;
 	margin-bottom: 1.75rem;
 }

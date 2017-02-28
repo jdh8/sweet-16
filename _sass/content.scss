@@ -34,15 +34,13 @@ h6 {
 	}
 }
 
-article > :first-child,
+article .title,
 h1 {
 	font-size: 1.75rem;
 	line-height: 2.1875rem;
 }
 
-header h1,
-main > header > h1,
-main > h1,
+.title,
 h2 {
 	font-size: 1.4375rem;
 	line-height: 1.75rem;
@@ -69,34 +67,22 @@ h6 {
 	font-style: italic;
 }
 
-main > h1,
-article > :first-child {
+.title {
+	color: #1a1a1a;
 	font-family: $sans;
 	font-weight: 700;
-}
-
-article > :first-child > a {
-	color: #1a1a1a;
-}
-
-article > :first-child > a:hover,
-article > :first-child > a:focus {
-	color: #007acc;
 }
 
 main > header {
 	display: block;
 	padding: 0;
 	margin-bottom: 3.5rem;
+	border-top: 4px solid #1a1a1a;
+	padding-top: 1.75rem;
 }
 
 main > h1 {
 	margin-bottom: 3.5rem;
-}
-
-main > header {
-	border-top: 4px solid #1a1a1a;
-	padding-top: 1.75rem;
 }
 
 header {
@@ -104,49 +90,37 @@ header {
 	font-size: 0.8125rem;
 	font-weight: 400;
 	line-height: 0.875rem;
+}
+
+body > header {
 	padding: 2.625rem 7.6923076923076923%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-body > header > :first-child {
+.brand {
 	margin: 0.875em auto 0.875em 0;
 }
 
-body > header p {
-	display: none;
-}
-
-header h1 {
-	font-family: $sans;
-	font-weight: 700;
+.brand > h1 {
 	margin: 0;
 }
 
-header h1,
-header h1 > a {
-	color: #1a1a1a;
-}
-
-header h1 > a:hover,
-header h1 > a:focus {
-	color: #007acc;
-}
-
-header p {
+.brand > p {
 	margin: 0.4375rem 0 0;
-}
-
-header > nav {
 	display: none;
 }
 
-header > :checked ~ nav {
+header > .menu {
+	display: none;
+}
+
+:checked ~ .menu {
 	display: block;
 }
 
-header > label {
+.toggle {
 	background-color: transparent;
 	border: 1px solid #d1d1d1;
 	color: #1a1a1a;
@@ -155,14 +129,14 @@ header > label {
 	padding: 0.625rem;
 }
 
-header > label:hover,
-header > label:focus {
+.toggle:hover,
+.toggle:focus {
 	background-color: transparent;
 	border-color: #007acc;
 	color: #007acc;
 }
 
-header > :checked + label {
+:checked + .toggle {
 	background-color: #1a1a1a;
 	border-color: #1a1a1a;
 	color: #fff;
@@ -208,15 +182,15 @@ footer > div:not(:last-child)::after {
 }
 
 @media screen and (min-width: 44.375em) {
-	@import "screen/44.375";
+	@import "query/44.375";
 }
 
 @media screen and (min-width: 56.875em) {
-	@import "screen/56.875";
+	@import "query/56.875";
 }
 
 @media screen and (min-width: 61.5625em) {
-	@import "screen/61.5625";
+	@import "query/61.5625";
 }
 
 @media screen and (min-width: 85.125em) {
@@ -226,13 +200,5 @@ footer > div:not(:last-child)::after {
 }
 
 @media print {
-	body > header > label,
-	body > aside,
-	nav {
-		display: none;
-	}
-
-	body > header > :first-child > p {
-		display: block;
-	}
+	@import "query/print";
 }

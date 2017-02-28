@@ -36,7 +36,7 @@ article {
 	margin-right: 0;
 }
 
-article > :first-child {
+article .title {
 	font-size: 2.0625rem;
 	line-height: 2.625rem;
 }
@@ -58,31 +58,31 @@ blockquote {
 	margin-left: -1.75rem;
 }
 
-header {
+body > header {
 	padding: 3.9375rem 7.6923076923076923%
 }
 
-body > header > :first-child {
+.brand {
 	margin-top: 1.3125rem;
 	margin-bottom: 1.3125rem;
 }
 
-body > header p {
-	display: block;
-}
-
-header h1 {
+.brand > h1 {
 	font-size: 1.75rem;
 	line-height: 1.25;
 }
 
-header > label {
+.brand > p {
+	display: block;
+}
+
+.toggle {
 	font-size: 1rem;
 	margin: 1.3125em 0;
 	padding: 0.8125em 0.875em 0.6875em;
 }
 
-header > nav {
+header > .menu {
 	margin: 1.3125em 0;
 }
 
