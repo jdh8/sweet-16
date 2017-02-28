@@ -4,8 +4,7 @@ a {
 }
 
 header a,
-footer a,
-.title > a {
+footer a {
 	color: inherit;
 }
 
@@ -16,8 +15,7 @@ a:active {
 }
 
 header,
-footer,
-.title > {
+footer {
 	a:hover,
 	a:focus,
 	a:active {
@@ -40,8 +38,13 @@ footer a:hover,
 	box-shadow: 0 1px 0 0 currentColor;
 }
 
+header h1 a:hover,
+header h2 a:hover,
+header h3 a:hover,
+header h4 a:hover,
+header h5 a:hover,
+header h6 a:hover,
 nav a:hover,
-.title > a:hover,
 .content a:hover,
 .content a:focus {
 	box-shadow: none;

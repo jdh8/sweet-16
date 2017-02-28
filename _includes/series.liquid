@@ -1,6 +1,6 @@
 {% for post in include.posts limit: site.paginate %}
 	<article>
-		<h2 class="title"><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
+		<header><h2><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2></header>
 		<div class="post content">{{ post.content }}</div>
 		<footer>
 			<div><a href="{{ post.url }}" rel="bookmark"><time>{{ post.date | date: "%F" }}</time></a></div>

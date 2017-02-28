@@ -20,27 +20,42 @@ article {
 	position: relative;
 }
 
+%title {
+	font-family: $sans;
+	font-weight: 700;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+	color: #1a1a1a;
 	font-weight: 900;
 	margin-bottom: 1.75rem;
 
 	* + & {
 		margin-top: 3.5rem;
 	}
+
+	header & {
+		@extend %title;
+	}
 }
 
-article .title,
+main > h1 {
+	@extend %title;
+}
+
+article > header > *,
 h1 {
 	font-size: 1.75rem;
 	line-height: 2.1875rem;
 }
 
-.title,
+header > h1,
+main > h1,
 h2 {
 	font-size: 1.4375rem;
 	line-height: 1.75rem;
@@ -65,12 +80,6 @@ h4 {
 
 h6 {
 	font-style: italic;
-}
-
-.title {
-	color: #1a1a1a;
-	font-family: $sans;
-	font-weight: 700;
 }
 
 main > header {
