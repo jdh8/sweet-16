@@ -179,16 +179,41 @@ article > footer {
 	padding-right: 0;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 }
 
 footer > div {
 	margin-bottom: 0.4375em;
 }
 
-footer > div:not(:last-child)::after {
+footer > div:not(:empty):not(:last-child)::after {
 	content: "/";
 	opacity: 0.7;
 	padding: 0 0.4375rem;
+}
+
+.content > footer {
+	border-top: 1px solid #d1d1d1;
+	padding-top: 1.75rem;
+}
+
+.content > footer .gravatar {
+	float: left;
+	margin-right: 1.75rem;
+}
+
+.content > footer > section {
+	overflow: hidden;
+
+	> :last-child {
+		margin-bottom: 0;
+	}
+}
+
+.content > footer h2 {
+	font-size: 1rem;
+	line-height: 1.75em;
+	margin-bottom: 0;
 }
 
 @viewport {

@@ -1,13 +1,33 @@
 ---
 layout: default
 ---
+{% assign author = site.data.authors[page.author] %}
+
 <article class="post {{ page.type }}">
 	<header><h1>{{ page.title }}</h1></header>
 	<div class="content">
 		{{ content }}
-		<address></address>
+		<footer>
+			{% if author.hash %}
+				<img class="gravatar" width="42" height="42"
+					src="https://www.gravatar.com/avatar/{{ author.hash }}?s=42&d=identicon"
+					srcset="https://www.gravatar.com/avatar/{{ author.hash }}?s=84&d=identicon 2x">
+			{% endif %}
+			{% if author.name %}
+				<section>
+					<header><h2>Author: {{ author.name }}</h2></header>
+					{{ author.bio | markdownify }}
+				</section>
+			{% endif %}
+		</footer>
 	</div>
 	<footer>
+		{% if author.hash %}
+			<img class="gravatar" width="49" height="49"
+				src="https://www.gravatar.com/avatar/{{ author.hash }}?s=49&d=identicon"
+				srcset="https://www.gravatar.com/avatar/{{ author.hash }}?s=98&d=identicon 2x">
+		{% endif %}
+		<div>{{ author.name }}</div>
 		<div><time>{{ page.date | date: "%F" }}</time></div>
 		<div>
 			{% for category in page.categories %}
