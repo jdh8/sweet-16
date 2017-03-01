@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Typography test
-category: Typesetting
 tag: Typography
 ---
 [Lorem ipsum][lorem] dolor sit amet, consectetur adipiscing elit, sed do
