@@ -1,4 +1,4 @@
 ---
 layout: tag
-title: Convention
+title: Typography
 ---

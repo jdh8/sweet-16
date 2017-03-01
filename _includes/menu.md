@@ -1,3 +1,2 @@
-* [About](/about/)
-* [Tools](/tools/)
-* [Wbridge5](https://jdh8.gitbooks.io/wbridge5/content/)
+* [Example](https://example.org/)
+	- [Source of this theme](https://github.com/jdh8/sweet-16/)
