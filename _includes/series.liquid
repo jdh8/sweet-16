@@ -1,9 +1,13 @@
 {% for post in include.posts limit: site.paginate %}
 	<article class="post {{ post.type }}">
-		<header><h2><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2></header>
+		<header><h2><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2></header>
 		<div class="content">{{ post.content }}</div>
 		<footer>
-			<div><a href="{{ post.url }}" rel="bookmark"><time>{{ post.date | date: "%F" }}</time></a></div>
+			<div>
+				<a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
+					<time>{{ post.date | date: "%F" }}</time>
+				</a>
+			</div>
 			<div>
 				{% for category in post.categories %}
 					<a rel="category tag" href="{{ site.baseurl }}/category/{{ category | slugify }}">
