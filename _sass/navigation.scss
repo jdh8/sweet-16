@@ -1,6 +1,10 @@
 a {
-	color: #007acc;
 	text-decoration: none;
+}
+
+a,
+.content a {
+	color: #007acc;
 }
 
 header a,
@@ -12,6 +16,10 @@ a:hover,
 a:focus,
 a:active {
 	color: #686868;
+
+	.content & {
+		color: #686868;
+	}
 }
 
 header,
