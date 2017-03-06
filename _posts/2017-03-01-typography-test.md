@@ -42,6 +42,30 @@ id est laborum.
 			{{ origin }}/1280px-{{ file }} 1280w">
 </a>
 
+~~~ cpp
+struct Color
+{
+    class Red;
+    class Green;
+    class Blue;
+};
+
+template<typename ColorType>
+struct hex;
+
+template<>
+struct hex<Color::Red>
+{ enum { value = 0xff0000 }; };
+
+template<>
+struct hex<Color::Green>
+{ enum { value = 0x00ff00 }; };
+
+template<>
+struct hex<Color::Blue>
+{ enum { value = 0x0000ff }; };
+~~~
+
 If 1♣ ensures 3+ clubs
 : With minimum strength, the probability of only 3 clubs is 21.5%.
 
