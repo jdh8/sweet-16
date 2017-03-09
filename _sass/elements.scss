@@ -86,8 +86,16 @@ td {
 	padding: 0.4375em;
 }
 
-::placeholder {
+@mixin placeholder() {
 	font-family: $sans;
 	color: #686868;
 	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	@include placeholder();
+}
+
+::placeholder {
+	@include placeholder();
 }
