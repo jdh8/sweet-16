@@ -50,7 +50,7 @@ nav a:hover,
 }
 
 .menu {
-	@extend %sans;
+	font-family: $sans;
 	font-size: 1rem;
 	border-bottom: 1px solid #d1d1d1;
 }
@@ -96,7 +96,7 @@ main > nav {
 }
 
 .pagination {
-	@extend %sans;
+	font-family: $sans;
 	font-size: 1.1875rem;
 	position: relative;
 }
