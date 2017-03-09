@@ -5,11 +5,11 @@ input {
 button,
 button[disabled]:hover,
 button[disabled]:focus {
+	@extend %sans;
 	background: #1a1a1a;
 	border: 0;
 	border-radius: 2px;
 	color: #fff;
-	@extend %sans;
 	font-weight: 700;
 	letter-spacing: 0.046875em;
 	line-height: 1;

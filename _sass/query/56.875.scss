@@ -2,17 +2,6 @@ body {
 	padding: 0 4.54545454545454545%
 }
 
-main {
-	float: left;
-	margin-right: -100%;
-	padding: 0;
-	width: 70%;
-}
-
-article {
-	margin: 0;
-}
-
 body > header {
 	padding-left: 0;
 	padding-right: 0;
@@ -122,6 +111,17 @@ header > .menu {
 	right: 0.5625em;
 	top: 0.875em;
 	transform: rotate(90deg);
+}
+
+main {
+	float: left;
+	margin-right: -100%;
+	padding: 0;
+	width: 70%;
+}
+
+article {
+	margin: 0;
 }
 
 aside {

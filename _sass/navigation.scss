@@ -20,16 +20,12 @@ a:active {
 	.content & {
 		color: #686868;
 	}
-}
 
-header,
-footer {
-	a:hover,
-	a:focus,
-	a:active {
+	header &,
+	footer & {
 		color: #007acc;
 	}
-};
+}
 
 a:focus {
 	outline: thin dotted;
@@ -46,12 +42,7 @@ footer a:hover,
 	box-shadow: 0 1px 0 0 currentColor;
 }
 
-header h1 a:hover,
-header h2 a:hover,
-header h3 a:hover,
-header h4 a:hover,
-header h5 a:hover,
-header h6 a:hover,
+header %heading a:hover,
 nav a:hover,
 .content a:hover,
 .content a:focus {
