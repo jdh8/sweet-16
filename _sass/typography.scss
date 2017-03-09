@@ -1,11 +1,10 @@
 $sans: Montserrat, "Helvetica Neue", sans-serif;
-$serif: Merriweather, Georgia, "Times New Roman", Times, serif;
 
 html,
 input,
 select,
 textarea {
-	font-family: $serif;
+	font-family: Merriweather, Georgia, "Times New Roman", Times, serif;
 	color: #1a1a1a;
 	line-height: 1.75;
 }
