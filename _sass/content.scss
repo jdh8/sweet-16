@@ -218,6 +218,7 @@ footer > div:not(:empty):not(:last-child)::after {
 
 @viewport {
 	width: device-width;
+	zoom: 1;
 }
 
 @media screen and (min-width: 44.375em) {
