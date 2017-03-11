@@ -22,14 +22,25 @@ button:focus {
 	background: #007acc;
 }
 
-button:focus {
+button:focus,
+:checked:focus + .toggle {
 	outline: thin dotted;
 	outline-offset: -4px;
 }
 
-header > label {
+.toggle {
 	@extend button;
 	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#ballot {
+	display: inherit;
+	position: absolute;
+	top: -99rem;
 }
 
 input[type="date"],
