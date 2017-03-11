@@ -1,7 +1,13 @@
 {% for post in include.posts limit: site.paginate %}
 	<article class="post {{ post.class }}">
 		<header><h2><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2></header>
-		<div class="content">{{ post.content }}</div>
+		<div class="content">
+			{% if post.ext == ".md" and post.content contains "<h2" %}
+				{{ post.content | replace_first: "<h2", "<section><h2" }}</section>
+			{% else %}
+				{{ post.content }}
+			{% endif %}
+		</div>
 		<footer>
 			<div>
 				<a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
