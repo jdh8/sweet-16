@@ -65,9 +65,7 @@ table {
 	width: 100%;
 }
 
-caption,
-th,
-td {
+caption {
 	font-weight: normal;
 	text-align: start;
 }
@@ -75,6 +73,7 @@ td {
 th {
 	border-width: 0 1px 1px 0;
 	font-weight: 700;
+	text-align: start;
 }
 
 td {
