@@ -38,9 +38,8 @@ button:focus,
 }
 
 #ballot {
-	display: inherit;
-	position: absolute;
-	top: -99rem;
+	display: inline;
+	opacity: 0;
 }
 
 input[type="date"],
