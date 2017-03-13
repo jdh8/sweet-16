@@ -7,4 +7,5 @@ description:
     in <a href="https://jekyllrb.com/" rel="external">Jekyll</a>
 
 paginate: 10
+paginate_path: /page/:num/
 permalink: /:title/
