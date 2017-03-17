@@ -182,11 +182,11 @@ article > footer {
 	align-items: center;
 }
 
-footer > div {
+article > footer > div {
 	margin-bottom: 0.4375rem;
 }
 
-footer > div:not(:empty):not(:last-child)::after {
+article > footer > * + div:not(:empty)::before {
 	content: "/";
 	opacity: 0.7;
 	padding: 0 0.4375rem;

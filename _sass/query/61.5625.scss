@@ -56,13 +56,13 @@ article > header > * {
 	width: 71.4285714285714285%
 }
 
-footer > div::after {
-	display: none;
-}
-
 article > footer {
 	display: block;
 	padding-top: 0.125rem;
+}
+
+article > footer > div::before {
+	display: none;
 }
 
 article > footer > .gravatar {
