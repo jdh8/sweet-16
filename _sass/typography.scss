@@ -1,34 +1,10 @@
-@font-face {
-	font-family: Symbola;
-	src: local(Symbola), url(../fonts/Symbola.woff);
-}
-
-@font-face {
-	font-family: Symbola;
-	font-style: italic;
-	src: local(Symbola), url(../fonts/Symbola.woff);
-}
-
-@font-face {
-	font-family: Symbola;
-	font-weight: bold;
-	src: local(Symbola), url(../fonts/Symbola.woff);
-}
-
-@font-face {
-	font-family: Symbola;
-	font-style: italic;
-	font-weight: bold;
-	src: local(Symbola), url(../fonts/Symbola.woff);
-}
-
-$sans: Montserrat, "Helvetica Neue", sans-serif, Symbola;
+$sans: Montserrat, "Helvetica Neue", sans-serif;
 
 html,
 input,
 select,
 textarea {
-	font-family: Merriweather, Georgia, "Times New Roman", Times, serif, Symbola;
+	font-family: Merriweather, Georgia, "Times New Roman", Times, serif;
 	color: #1a1a1a;
 	line-height: 1.75;
 }
