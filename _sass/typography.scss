@@ -52,7 +52,7 @@ blockquote small {
 	line-height: 1.75;
 
 	&::before {
-		content: "\2014\00a0"; // &mdash;&nbsp;
+		content: "\2014\00a0";
 	}
 }
 
