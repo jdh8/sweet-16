@@ -1,0 +1,5 @@
+- title: Example
+  href: https://example.org/
+  children:
+    - title: Source of this theme
+      href: https://github.com/jdh8/sweet-16/

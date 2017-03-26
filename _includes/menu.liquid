@@ -1,0 +1,18 @@
+{% if include.list %}
+	<ul>
+		{% for entry in include.list %}
+			<li>
+				<a href="{{ entry.href }}">
+					{% assign children = entry.children | map: "href" %}
+
+					{% if entry.href == page.url or children contains page.url %}
+						<strong>{{ entry.title }}</strong>
+					{% else %}
+						{{ entry.title }}
+					{% endif %}
+				</a>
+				{% include menu.liquid list=entry.children %}
+			</li>
+		{% endfor %}
+	</ul>
+{% endif %}
