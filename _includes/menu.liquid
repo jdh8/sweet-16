@@ -2,7 +2,7 @@
 	<ul>
 		{% for entry in include.list %}
 			<li>
-				<a href="{{ entry.href }}">
+				<a href="{% unless entry.href contains "//" %}{{ site.baseurl }}{% endunless %}{{ entry.href }}">
 					{% assign children = entry.children | map: "href" %}
 
 					{% if entry.href == page.url or children contains page.url %}
