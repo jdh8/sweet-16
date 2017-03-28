@@ -44,3 +44,17 @@ layout: default
 		</div>
 	</footer>
 </article>
+<nav>
+	{% if page.previous %}
+		<a class="linear" rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}">
+			<header>Previous</header>
+			{{ page.previous.title }}
+		</a>
+	{% endif %}
+	{% if page.next %}
+		<a class="linear" rel="prev" href="{{ site.baseurl }}{{ page.next.url }}">
+			<header>Next</header>
+			{{ page.next.title }}
+		</a>
+	{% endif %}
+</nav>

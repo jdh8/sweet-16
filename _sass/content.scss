@@ -195,6 +195,7 @@ article > footer > * + div:not(:empty)::before {
 .content > footer {
 	border-top: 1px solid #d1d1d1;
 	padding-top: 1.75rem;
+	padding-bottom: 0;
 }
 
 .content > footer .gravatar {

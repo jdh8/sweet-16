@@ -3,12 +3,16 @@ a {
 }
 
 a,
-.content a {
+.content a,
+.linear:hover,
+.linear:focus,
+.linear:active {
 	color: #007acc;
 }
 
 header a,
-footer a {
+footer a,
+.linear {
 	color: inherit;
 }
 
@@ -93,10 +97,24 @@ footer > .menu {
 main > nav {
 	border-top: 4px solid #1a1a1a;
 	border-bottom: none;
+	font-family: $sans;
+}
+
+.linear {
+	border-bottom: 4px solid #1a1a1a;
+	display: block;
+	font-weight: 700;
+	padding: 1.75rem 0;
+}
+
+.linear > header {
+	letter-spacing: 0.0625rem;
+	line-height: 1.3125rem;
+	margin-bottom: 0.4375rem;
+	text-transform: uppercase;
 }
 
 .pagination {
-	font-family: $sans;
 	font-size: 1.1875rem;
 	position: relative;
 }
