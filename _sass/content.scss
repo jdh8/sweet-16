@@ -221,25 +221,3 @@ article > footer > * + div:not(:empty)::before {
 	width: device-width;
 	zoom: 1;
 }
-
-@media screen and (min-width: 44.375em) {
-	@import "query/44.375";
-}
-
-@media screen and (min-width: 56.875em) {
-	@import "query/56.875";
-}
-
-@media screen and (min-width: 61.5625em) {
-	@import "query/61.5625";
-}
-
-@media screen and (min-width: 85.125em) {
-	body {
-		padding: 0 3.75em;
-	}
-}
-
-@media print {
-	@import "query/print";
-}
