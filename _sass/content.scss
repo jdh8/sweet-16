@@ -15,8 +15,12 @@ body {
 	margin-bottom: 1.75rem;
 }
 
-* + %heading {
+.content %heading {
 	margin-top: 3.5rem;
+}
+
+.content > %heading:first-child {
+	margin-top: 0;
 }
 
 header %heading {
