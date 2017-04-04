@@ -15,11 +15,12 @@ body {
 	margin-bottom: 1.75rem;
 }
 
-.content %heading {
+.content * + %heading,
+.content * + * %heading {
 	margin-top: 3.5rem;
 }
 
-.content > %heading:first-child {
+.content > footer h2 {
 	margin-top: 0;
 }
 
