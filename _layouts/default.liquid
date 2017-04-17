@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/style/clearings.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/style/genericons.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/style/highlight.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/style/social.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/style/screen/44.375.css" media="screen and (min-width: 44.375em)">
 	<link rel="stylesheet" href="{{ site.baseurl }}/style/screen/56.875.css" media="screen and (min-width: 56.875em)">
 	<link rel="stylesheet" href="{{ site.baseurl }}/style/screen/61.5625.css" media="screen and (min-width: 61.5625em)">
@@ -34,7 +35,7 @@
 		</div>
 		<input hidden type="checkbox" id="ballot">
 		<label class="toggle" for="ballot">Menu</label>
-		<nav class="menu">{% include menu.liquid list=site.data.menu %}</nav>
+		{% include navigation.liquid %}
 	</header>
 	<main>{{ content }}</main>
 	<aside>
@@ -64,7 +65,7 @@
 		</section>
 	</aside>
 	<footer>
-		<nav class="menu">{% include menu.liquid list=site.data.menu %}</nav>
+		{% include navigation.liquid %}
 		<p>This blog is styled with <a rel="publisher" href="https://github.com/jdh8/sweet-16/">Sweet 16</a>.</p>
 	</footer>
 </body>

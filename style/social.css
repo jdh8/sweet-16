@@ -1,0 +1,140 @@
+.social {
+	color: #1a1a1a;
+	display: flex;
+	font-family: Genericons;
+	font-size: 1rem;
+	margin-bottom: 1.3125rem;
+	margin-left: auto;
+	order: 2;
+}
+
+header > .social {
+	display: none;
+}
+
+.social > a {
+	border: 1px solid #d1d1d1;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 0.4375rem 0.4375rem 0;
+	text-align: center;
+	width: 35px;
+	height: 35px;
+}
+
+.social > a::before {
+	content: "\f415";
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	width: 33px;
+}
+
+.social > a[href*="codepen.io"]::before {
+	content: "\f216";
+}
+
+.social > a[href*="digg.com"]::before {
+	content: "\f221";
+}
+
+.social > a[href*="dribbble.com"]::before {
+	content: "\f201";
+}
+
+.social > a[href*="dropbox.com"]::before {
+	content: "\f225";
+}
+
+.social > a[href*="facebook.com"]::before {
+	content: "\f203";
+}
+
+.social > a[href*="flickr.com"]::before {
+	content: "\f211";
+}
+
+.social > a[href*="foursquare.com"]::before {
+	content: "\f226";
+}
+
+.social > a[href*="plus.google.com"]::before {
+	content: "\f206";
+}
+
+.social > a[href*="github.com"]::before {
+	content: "\f200";
+}
+
+.social > a[href*="instagram.com"]::before {
+	content: "\f215";
+}
+
+.social > a[href*="linkedin.com"]::before {
+	content: "\f208";
+}
+
+.social > a[href*="path.com"]::before {
+	content: "\f219";
+}
+
+.social > a[href*="pinterest.com"]::before {
+	content: "\f210";
+}
+
+.social > a[href*="getpocket.com"]::before {
+	content: "\f224";
+}
+
+.social > a[href*="polldaddy.com"]::before {
+	content: "\f217";
+}
+
+.social > a[href*="reddit.com"]::before {
+	content: "\f222";
+}
+
+.social > a[href*="skype.com"]::before {
+	content: "\f220";
+}
+
+.social > a[href*="stumbleupon.com"]::before {
+	content: "\f223";
+}
+
+.social > a[href*="tumblr.com"]::before {
+	content: "\f214";
+}
+
+.social > a[href*="twitter.com"]::before {
+	content: "\f202";
+}
+
+.social > a[href*="vimeo.com"]::before {
+	content: "\f212";
+}
+
+.social > a[href*="wordpress.com"]::before,
+.social > a[href*="wordpress.org"]::before {
+	content: "\f205";
+}
+
+.social > a[href*="youtube.com"]::before {
+	content: "\f213";
+}
+
+.social > a[href^="mailto:"]::before {
+	content: "\f410";
+}
+
+.social > a[href*="spotify.com"]::before {
+	content: "\f515";
+}
+
+.social > a[href*="twitch.tv"]::before {
+	content: "\f516";
+}
+
+.social > a[href$="/feed.atom"]::before {
+	content: "\f413";
+}
