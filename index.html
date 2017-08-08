@@ -58,7 +58,7 @@ layout: default
 			<link rel="stylesheet" href="loader.css">
 			<button type="button" id="load">Older posts</button>
 		</template>
-		<script>var paginator = { pages: {{ paginator.total_pages }} }</script>
+		<script>const pages = {{ paginator.total_pages }}</script>
 		<script async src="loader.js"></script>
 	{% endif %}
 {% endif %}
