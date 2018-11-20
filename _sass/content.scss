@@ -5,7 +5,7 @@ body {
 }
 
 %title {
-	font-family: $sans;
+	@extend .sans;
 	font-weight: 700;
 }
 
@@ -183,7 +183,7 @@ body > footer {
 }
 
 article > footer {
-	font-family: $sans;
+	@extend .sans;
 	padding-left: 0;
 	padding-right: 0;
 	display: flex;

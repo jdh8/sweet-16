@@ -10,7 +10,7 @@ aside > section {
 }
 
 aside > section > h2 {
-	font-family: $sans;
+	@extend .sans;
 	font-size: 1rem;
 	font-weight: 700;
 	letter-spacing: 0.046875em;
@@ -27,7 +27,7 @@ aside > section > h2:empty {
 	border: 1px solid #d1d1d1;
 	border-radius: 2px;
 	display: inline-block;
-	font-family: $sans;
+	@extend .sans;
 	line-height: 1;
 	margin: 0 0.1875em 0.4375em 0;
 	padding: 0.5625em 0.4375em 0.5em;

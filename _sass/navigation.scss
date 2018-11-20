@@ -54,7 +54,7 @@ nav a:hover,
 }
 
 .menu {
-	font-family: $sans;
+	@extend .sans;
 	font-size: 1rem;
 	border-bottom: 1px solid #d1d1d1;
 }
@@ -97,7 +97,7 @@ footer > .menu {
 main > nav {
 	border-top: 4px solid #1a1a1a;
 	border-bottom: none;
-	font-family: $sans;
+	@extend .sans;
 }
 
 .linear {
